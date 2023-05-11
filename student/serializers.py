@@ -8,10 +8,10 @@ class StudentModelSerializer(serializers.ModelSerializer):
         model = StudentModel
         fields = '__all__'
     
-    # def validate_id(self,value):
-    #     if not funcs.validate_id_number(value):
-    #         raise serializers.ValidationError("身份证信息有误，请检查后重新填写")
-    #     return value
+    def validate_id(self,value):
+        if not funcs.validate_id_number(value):
+            raise serializers.ValidationError("身份证信息有误，请检查后重新填写")
+        return value
     
     def validate_admission_date(self,value):
         if value < 1945 or value > 2099:

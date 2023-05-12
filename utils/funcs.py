@@ -24,3 +24,4 @@ def validate_id_number(id_number):
     if id_list[-1] != check_code:
         return False
     return True
+

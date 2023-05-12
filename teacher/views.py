@@ -26,7 +26,7 @@ class TeacherViewset(viewsets.GenericViewSet,
                      mixins.UpdateModelMixin,
                      mixins.CreateModelMixin,
                      mixins.DestroyModelMixin):
-    queryset = User.objects.all()
+    queryset = User.objects.all().order_by('id')
     serializer_class = TeacherSerializer
     permission_classes = [IsAdminOrOwnerPutOnly]
 

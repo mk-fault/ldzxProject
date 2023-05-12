@@ -2264,3 +2264,1554 @@ INFO 2023-05-11 16:23:57,912 autoreload 17654 139972316291200 /opt/ldzxProject/s
 INFO 2023-05-11 16:23:58,707 autoreload 17667 140455459528832 Watching for file changes with StatReloader
 WARNING 2023-05-11 16:24:00,405 log 17667 140455374046976 Bad Request: /api/student/students/
 WARNING 2023-05-11 16:24:00,406 basehttp 17667 140455374046976 "POST /api/student/students/ HTTP/1.1" 400 43
+INFO 2023-05-12 09:49:03,071 autoreload 1634 139990615277696 Watching for file changes with StatReloader
+INFO 2023-05-12 09:49:07,192 basehttp 1634 139990530057984 "GET /api/student/students/ HTTP/1.1" 200 453
+INFO 2023-05-12 09:49:41,059 autoreload 1634 139990615277696 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:49:41,486 autoreload 1779 140459741511808 Watching for file changes with StatReloader
+INFO 2023-05-12 09:49:43,834 autoreload 1779 140459741511808 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:49:44,214 autoreload 1802 140613345247360 Watching for file changes with StatReloader
+INFO 2023-05-12 09:49:46,591 autoreload 1802 140613345247360 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:49:46,969 autoreload 1804 139701987569792 Watching for file changes with StatReloader
+INFO 2023-05-12 09:50:14,521 autoreload 1804 139701987569792 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:50:14,986 autoreload 1848 140337398628480 Watching for file changes with StatReloader
+WARNING 2023-05-12 09:52:54,962 log 1848 140337245845248 Unauthorized: /api/student/students/513323197501303516/
+WARNING 2023-05-12 09:52:54,963 basehttp 1848 140337245845248 "GET /api/student/students/513323197501303516/ HTTP/1.1" 401 43
+INFO 2023-05-12 09:53:00,212 basehttp 1848 140337245845248 "GET /api/student/students/513323197501303516/ HTTP/1.1" 200 200
+INFO 2023-05-12 09:53:05,930 basehttp 1848 140337245845248 "GET /api/student/students/ HTTP/1.1" 200 453
+INFO 2023-05-12 09:54:14,577 autoreload 1848 140337398628480 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:54:15,426 autoreload 1999 139692816093312 Watching for file changes with StatReloader
+INFO 2023-05-12 09:54:17,805 autoreload 1999 139692816093312 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:54:18,206 autoreload 2022 140334664777856 Watching for file changes with StatReloader
+INFO 2023-05-12 09:54:19,500 autoreload 2022 140334664777856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:54:20,292 autoreload 2024 140252027478144 Watching for file changes with StatReloader
+INFO 2023-05-12 09:54:21,744 autoreload 2024 140252027478144 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:54:22,145 autoreload 2040 139861292548224 Watching for file changes with StatReloader
+INFO 2023-05-12 09:54:23,433 autoreload 2040 139861292548224 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:54:23,855 autoreload 2048 140269604012160 Watching for file changes with StatReloader
+INFO 2023-05-12 09:59:11,049 autoreload 2048 140269604012160 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:59:11,572 autoreload 2513 140436568805504 Watching for file changes with StatReloader
+INFO 2023-05-12 09:59:14,018 autoreload 2513 140436568805504 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:59:14,804 autoreload 2536 139645073850496 Watching for file changes with StatReloader
+INFO 2023-05-12 09:59:20,190 autoreload 2536 139645073850496 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:59:20,600 autoreload 2559 140040688648320 Watching for file changes with StatReloader
+INFO 2023-05-12 09:59:25,967 autoreload 2559 140040688648320 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 09:59:26,408 autoreload 2582 140166512201856 Watching for file changes with StatReloader
+INFO 2023-05-12 09:59:57,190 autoreload 2717 139861642915968 Watching for file changes with StatReloader
+INFO 2023-05-12 10:00:06,739 autoreload 2765 139945261654144 Watching for file changes with StatReloader
+INFO 2023-05-12 10:00:12,402 basehttp 2765 139945176172288 "GET /api/student/students/ HTTP/1.1" 200 453
+INFO 2023-05-12 10:00:31,199 basehttp 2765 139945176172288 "GET /api/student/students/?addmission_date=2020 HTTP/1.1" 200 453
+INFO 2023-05-12 10:00:55,149 basehttp 2765 139945176172288 "GET /api/student/students/?sex=1 HTTP/1.1" 200 453
+INFO 2023-05-12 10:01:04,854 autoreload 2765 139945261654144 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:01:05,273 autoreload 2909 140715610833024 Watching for file changes with StatReloader
+INFO 2023-05-12 10:01:06,560 autoreload 2909 140715610833024 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:01:07,472 autoreload 2922 140461178396800 Watching for file changes with StatReloader
+INFO 2023-05-12 10:01:10,162 basehttp 2922 140461092914944 "GET /api/student/students/?sex=1 HTTP/1.1" 200 252
+INFO 2023-05-12 10:01:25,572 basehttp 2922 140461092914944 "GET /api/student/students/?admission_date=2020 HTTP/1.1" 200 52
+INFO 2023-05-12 10:01:33,962 basehttp 2922 140461092914944 "GET /api/student/students/?min_admission_date=2020 HTTP/1.1" 200 453
+WARNING 2023-05-12 10:01:51,296 log 2922 140461092914944 Unauthorized: /api/student/students/
+WARNING 2023-05-12 10:01:51,297 basehttp 2922 140461092914944 "POST /api/student/students/ HTTP/1.1" 401 43
+INFO 2023-05-12 10:02:28,018 basehttp 2922 140461092914944 "POST /api/student/students/ HTTP/1.1" 201 200
+WARNING 2023-05-12 10:03:03,372 log 2922 140461092914944 Bad Request: /api/student/students/
+WARNING 2023-05-12 10:03:03,372 basehttp 2922 140461092914944 "POST /api/student/students/ HTTP/1.1" 400 194
+INFO 2023-05-12 10:04:01,215 basehttp 2922 140461092914944 "POST /api/student/students/ HTTP/1.1" 201 200
+INFO 2023-05-12 10:04:13,454 basehttp 2922 140461092914944 "POST /api/student/students/ HTTP/1.1" 201 200
+INFO 2023-05-12 10:04:16,831 basehttp 2922 140461092914944 "GET /api/student/students/?min_admission_date=2020 HTTP/1.1" 200 654
+INFO 2023-05-12 10:04:27,692 basehttp 2922 140461092914944 "GET /api/student/students/?max_admission_date=2020 HTTP/1.1" 200 453
+INFO 2023-05-12 10:04:39,318 basehttp 2922 140461092914944 "GET /api/student/students/?sex=0 HTTP/1.1" 200 654
+INFO 2023-05-12 10:05:30,334 basehttp 2922 140461092914944 "GET /api/student/students/ HTTP/1.1" 200 1056
+ERROR 2023-05-12 10:06:13,092 log 2922 140461092914944 Internal Server Error: /api/student/students/513323197501303519
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/api/student/students/513323197501303519/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2023-05-12 10:06:13,093 basehttp 2922 140461092914944 "PATCH /api/student/students/513323197501303519 HTTP/1.1" 500 70625
+INFO 2023-05-12 10:06:41,653 basehttp 2922 140461092914944 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 10:06:46,346 basehttp 2922 140461092914944 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 10:08:04,737 basehttp 2922 140461092914944 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 10:08:07,309 basehttp 2922 140461092914944 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 10:09:16,412 autoreload 2922 140461178396800 /opt/ldzxProject/teacher/views.py changed, reloading.
+INFO 2023-05-12 10:09:17,472 autoreload 3068 139762803126400 Watching for file changes with StatReloader
+INFO 2023-05-12 10:09:20,977 autoreload 3068 139762803126400 /opt/ldzxProject/teacher/views.py changed, reloading.
+INFO 2023-05-12 10:09:21,393 autoreload 3091 139946051870848 Watching for file changes with StatReloader
+INFO 2023-05-12 10:09:28,822 basehttp 3091 139945966388992 "GET /api/teacher/teachers/ HTTP/1.1" 200 481
+INFO 2023-05-12 10:12:28,376 autoreload 3091 139946051870848 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:29,012 autoreload 3299 139924168122496 Watching for file changes with StatReloader
+INFO 2023-05-12 10:12:31,402 autoreload 3299 139924168122496 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:32,346 autoreload 3322 140468724215936 Watching for file changes with StatReloader
+INFO 2023-05-12 10:12:33,871 autoreload 3322 140468724215936 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:34,497 autoreload 3324 139926431891584 Watching for file changes with StatReloader
+INFO 2023-05-12 10:12:35,933 autoreload 3324 139926431891584 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:36,329 autoreload 3340 140075276329088 Watching for file changes with StatReloader
+INFO 2023-05-12 10:12:39,675 autoreload 3340 140075276329088 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:40,646 autoreload 3348 140624501633152 Watching for file changes with StatReloader
+INFO 2023-05-12 10:12:42,017 autoreload 3348 140624501633152 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:12:42,794 autoreload 3371 140525211619456 Watching for file changes with StatReloader
+INFO 2023-05-12 10:13:12,520 autoreload 3371 140525211619456 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:13:13,376 autoreload 3394 139707707007104 Watching for file changes with StatReloader
+INFO 2023-05-12 10:13:14,734 autoreload 3394 139707707007104 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:13:15,787 autoreload 3407 140539315634304 Watching for file changes with StatReloader
+INFO 2023-05-12 10:13:18,402 autoreload 3407 140539315634304 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:13:19,234 autoreload 3418 140438017798272 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:09,201 autoreload 3418 140438017798272 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:09,696 autoreload 3555 139832062173312 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:12,041 autoreload 3555 139832062173312 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:12,798 autoreload 3575 140704439304320 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:18,212 autoreload 3575 140704439304320 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:18,681 autoreload 3598 140352428687488 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:21,051 autoreload 3598 140352428687488 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:21,916 autoreload 3614 140233210802304 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:24,371 autoreload 3614 140233210802304 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:24,760 autoreload 3622 139710220521600 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:30,219 autoreload 3622 139710220521600 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:30,767 autoreload 3645 140190293766272 Watching for file changes with StatReloader
+INFO 2023-05-12 10:14:32,103 autoreload 3645 140190293766272 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:14:32,885 autoreload 3668 140488783892608 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:04,717 autoreload 3668 140488783892608 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:05,515 autoreload 3693 140562253967488 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:10,894 autoreload 3693 140562253967488 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:11,315 autoreload 3813 140642047529088 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:12,582 autoreload 3813 140642047529088 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:12,981 autoreload 3833 140153022742656 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:16,307 autoreload 3833 140153022742656 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:16,736 autoreload 3838 140397557063808 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:28,207 autoreload 3838 140397557063808 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:28,605 autoreload 3879 140173285671040 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:31,910 autoreload 3879 140173285671040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:32,314 autoreload 3902 140182130118784 Watching for file changes with StatReloader
+INFO 2023-05-12 10:15:54,916 autoreload 3902 140182130118784 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:15:55,336 autoreload 3927 140305652564096 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:06,718 autoreload 3927 140305652564096 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:07,213 autoreload 3968 140267572744320 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:11,598 autoreload 3968 140267572744320 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:12,309 autoreload 4087 140647601524864 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:15,643 autoreload 4087 140647601524864 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:16,049 autoreload 4110 140366973653120 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:17,303 autoreload 4110 140366973653120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:17,806 autoreload 4112 139902010429568 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:20,914 autoreload 4112 139902010429568 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:21,533 autoreload 4143 139758927294592 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:22,762 autoreload 4143 139758927294592 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:23,423 autoreload 4145 140058366423168 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:25,877 autoreload 4145 140058366423168 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:26,281 autoreload 4165 140215352946816 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:27,547 autoreload 4165 140215352946816 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:27,996 autoreload 4167 140222838165632 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:29,259 autoreload 4167 140222838165632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:29,673 autoreload 4187 140275804491904 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:34,944 autoreload 4187 140275804491904 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:35,403 autoreload 4210 140670582071424 Watching for file changes with StatReloader
+INFO 2023-05-12 10:16:42,156 autoreload 4210 140670582071424 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:16:42,631 autoreload 4244 140647482044544 Watching for file changes with StatReloader
+INFO 2023-05-12 10:17:03,505 autoreload 4244 140647482044544 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:17:03,955 autoreload 4293 140499163500672 Watching for file changes with StatReloader
+INFO 2023-05-12 10:17:05,558 autoreload 4293 140499163500672 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:17:06,001 autoreload 4316 139911092904064 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:14,677 autoreload 4316 139911092904064 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:15,510 autoreload 4451 140168531210368 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:16,840 autoreload 4451 140168531210368 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:17,575 autoreload 4464 140418028126336 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:19,863 autoreload 4464 140418028126336 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:20,778 autoreload 4483 140303987675264 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:22,791 autoreload 4483 140303987675264 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:23,602 autoreload 4514 140617905303680 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:28,557 autoreload 4514 140617905303680 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:29,375 autoreload 4548 140491977109632 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:32,666 autoreload 4548 140491977109632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:33,506 autoreload 4568 140146876305536 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:35,927 autoreload 4568 140146876305536 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:36,712 autoreload 4573 139750416773248 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:39,124 autoreload 4573 139750416773248 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:39,891 autoreload 4596 139773476647040 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:50,193 autoreload 4596 139773476647040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:51,094 autoreload 4645 140468529053824 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:54,531 autoreload 4645 140468529053824 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:55,062 autoreload 4668 140412174319744 Watching for file changes with StatReloader
+INFO 2023-05-12 10:18:58,151 autoreload 4668 140412174319744 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:18:58,812 autoreload 4702 140381176606848 Watching for file changes with StatReloader
+INFO 2023-05-12 10:19:01,212 autoreload 4702 140381176606848 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:19:01,958 autoreload 4704 140016980177024 Watching for file changes with StatReloader
+INFO 2023-05-12 10:24:03,849 autoreload 4704 140016980177024 /opt/ldzxProject/student/urls.py changed, reloading.
+INFO 2023-05-12 10:24:05,044 autoreload 4855 140043471458432 Watching for file changes with StatReloader
+INFO 2023-05-12 10:24:13,202 autoreload 4855 140043471458432 /opt/ldzxProject/student/urls.py changed, reloading.
+INFO 2023-05-12 10:24:13,666 autoreload 4907 139949248712832 Watching for file changes with StatReloader
+INFO 2023-05-12 10:24:15,991 autoreload 4907 139949248712832 /opt/ldzxProject/student/urls.py changed, reloading.
+INFO 2023-05-12 10:24:16,905 autoreload 4923 140305684676736 Watching for file changes with StatReloader
+INFO 2023-05-12 10:25:09,689 autoreload 5145 139973442261120 Watching for file changes with StatReloader
+WARNING 2023-05-12 10:26:04,639 log 5145 139972355278592 Method Not Allowed: /api/student/
+WARNING 2023-05-12 10:26:04,640 basehttp 5145 139972355278592 "POST /api/student/ HTTP/1.1" 405 46
+ERROR 2023-05-12 10:26:28,934 log 5145 139972355278592 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 39, in post
+    StudentModel.objects.update_or_create(id=data['身份证号'],name=data['姓名'],sex=data['性别'],student_id=data['学号'],入学时间=data['入学时间'])
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1407, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1217, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '入学时间' into field. Choices are: access_count, admission_date, create_time, id, name, sex, student_id, update_time
+ERROR 2023-05-12 10:26:28,946 basehttp 5145 139972355278592 "POST /api/student/multi_create/ HTTP/1.1" 500 153493
+INFO 2023-05-12 10:28:02,074 autoreload 5406 140386582765696 Watching for file changes with StatReloader
+ERROR 2023-05-12 10:28:28,430 log 5406 140385495779072 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 40, in post
+    StudentModel.objects.update_or_create(id=data['身份证号'],name=data['姓名'],sex=data['性别'],student_id=data['学号'],入学时间=data['入学时间'])
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 962, in update_or_create
+    obj, created = self.select_for_update().get_or_create(defaults, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 929, in get_or_create
+    return self.get(**kwargs), False
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1407, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1217, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword '入学时间' into field. Choices are: access_count, admission_date, create_time, id, name, sex, student_id, update_time
+ERROR 2023-05-12 10:28:28,444 basehttp 5406 140385495779072 "POST /api/student/multi_create/ HTTP/1.1" 500 155900
+INFO 2023-05-12 10:28:43,639 autoreload 5406 140386582765696 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:28:45,772 autoreload 5581 140055152021632 Watching for file changes with StatReloader
+INFO 2023-05-12 10:29:00,285 autoreload 5667 139929099219072 Watching for file changes with StatReloader
+INFO 2023-05-12 10:29:07,150 basehttp 5667 139928397182720 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 10:29:50,969 autoreload 5667 139929099219072 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:29:51,476 autoreload 5819 140372968550528 Watching for file changes with StatReloader
+ERROR 2023-05-12 10:30:06,499 log 5819 140372266514176 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2023-05-12 10:30:06,503 basehttp 5819 140372266514176 "POST /api/student/multi_create/ HTTP/1.1" 500 79764
+INFO 2023-05-12 10:30:33,179 autoreload 5819 140372968550528 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:30:34,209 autoreload 5908 140465144156288 Watching for file changes with StatReloader
+INFO 2023-05-12 10:32:23,464 autoreload 6197 139943847284864 Watching for file changes with StatReloader
+INFO 2023-05-12 10:32:25,800 basehttp 6197 139943145248512 "GET /api/student/students/ HTTP/1.1" 200 1056
+WARNING 2023-05-12 10:32:44,153 log 6197 139943145248512 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 10:32:44,154 basehttp 6197 139943145248512 "POST /api/student/multi_create/ HTTP/1.1" 400 1171
+INFO 2023-05-12 10:33:35,860 autoreload 6197 139943847284864 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:33:36,936 autoreload 6346 139891725525120 Watching for file changes with StatReloader
+INFO 2023-05-12 10:33:39,721 autoreload 6346 139891725525120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:33:40,627 autoreload 6377 140049357971584 Watching for file changes with StatReloader
+INFO 2023-05-12 10:35:49,666 autoreload 6671 140266430603392 Watching for file changes with StatReloader
+WARNING 2023-05-12 10:35:56,355 log 6671 140265728567040 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 10:35:56,356 basehttp 6671 140265728567040 "POST /api/student/multi_create/ HTTP/1.1" 400 127
+INFO 2023-05-12 10:36:18,631 autoreload 6671 140266430603392 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:36:19,784 autoreload 6727 139849746624640 Watching for file changes with StatReloader
+INFO 2023-05-12 10:36:21,969 autoreload 6727 139849746624640 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:36:23,055 autoreload 6758 140507612688512 Watching for file changes with StatReloader
+WARNING 2023-05-12 10:36:26,477 log 6758 140506910643968 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 10:36:26,478 basehttp 6758 140506910643968 "POST /api/student/multi_create/ HTTP/1.1" 400 127
+INFO 2023-05-12 10:36:42,020 autoreload 6758 140507612688512 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:36:42,486 autoreload 6892 140527383416960 Watching for file changes with StatReloader
+INFO 2023-05-12 10:36:46,194 autoreload 6892 140527383416960 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:36:47,307 autoreload 6923 140056936906880 Watching for file changes with StatReloader
+WARNING 2023-05-12 10:36:50,210 log 6923 140056234874624 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 10:36:50,211 basehttp 6923 140056234874624 "POST /api/student/multi_create/ HTTP/1.1" 400 127
+INFO 2023-05-12 10:37:36,177 autoreload 6923 140056936906880 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:37:37,427 autoreload 7072 140412046110848 Watching for file changes with StatReloader
+INFO 2023-05-12 10:39:29,066 autoreload 7072 140412046110848 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:39:29,656 autoreload 7222 140279091544192 Watching for file changes with StatReloader
+INFO 2023-05-12 10:39:31,538 autoreload 7222 140279091544192 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:39:32,711 autoreload 7253 140585869512832 Watching for file changes with StatReloader
+INFO 2023-05-12 10:39:35,989 autoreload 7253 140585869512832 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:39:37,099 autoreload 7279 140275931369600 Watching for file changes with StatReloader
+INFO 2023-05-12 10:42:26,631 autoreload 7342 140660506116224 Watching for file changes with StatReloader
+INFO 2023-05-12 10:42:31,377 basehttp 7342 140659804079872 "GET /api/student/students/ HTTP/1.1" 200 1056
+WARNING 2023-05-12 10:43:00,422 log 7342 140659804079872 Bad Request: /api/student/students/
+WARNING 2023-05-12 10:43:00,422 basehttp 7342 140659804079872 "POST /api/student/students/ HTTP/1.1" 400 109
+INFO 2023-05-12 10:43:35,438 autoreload 7342 140660506116224 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:43:36,689 autoreload 7494 140217353064576 Watching for file changes with StatReloader
+INFO 2023-05-12 10:43:42,157 autoreload 7494 140217353064576 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:43:43,047 autoreload 7514 139656716619904 Watching for file changes with StatReloader
+INFO 2023-05-12 10:43:44,350 autoreload 7514 139656716619904 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:43:45,245 autoreload 7534 140199780049024 Watching for file changes with StatReloader
+INFO 2023-05-12 10:43:51,764 autoreload 7534 140199780049024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:43:52,186 autoreload 7557 140284576112768 Watching for file changes with StatReloader
+INFO 2023-05-12 10:45:01,755 autoreload 7557 140284576112768 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:45:02,537 autoreload 7694 140654402789504 Watching for file changes with StatReloader
+INFO 2023-05-12 10:49:00,910 autoreload 7694 140654402789504 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:49:01,869 autoreload 7839 139706760441984 Watching for file changes with StatReloader
+INFO 2023-05-12 10:49:06,960 autoreload 7839 139706760441984 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:49:07,398 autoreload 7870 140497175974016 Watching for file changes with StatReloader
+INFO 2023-05-12 10:49:09,036 autoreload 7870 140497175974016 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:49:09,953 autoreload 7898 139732703432832 Watching for file changes with StatReloader
+INFO 2023-05-12 10:51:09,387 autoreload 7898 139732703432832 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:51:10,581 autoreload 8028 140471714771072 Watching for file changes with StatReloader
+ERROR 2023-05-12 10:51:42,316 log 8028 140471012742912 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2023-05-12 10:51:42,319 basehttp 8028 140471012742912 "POST /api/student/multi_create/ HTTP/1.1" 500 79764
+INFO 2023-05-12 10:52:06,196 autoreload 8028 140471714771072 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:07,398 autoreload 8216 140301862809728 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:09,419 autoreload 8216 140301862809728 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:10,644 autoreload 8247 139994193711232 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:16,000 autoreload 8247 139994193711232 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:17,098 autoreload 8278 140432508928128 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:21,645 autoreload 8278 140432508928128 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:22,319 autoreload 8301 140712968917120 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:26,074 basehttp 8301 140712266880768 "POST /api/student/multi_create/ HTTP/1.1" 201 589
+INFO 2023-05-12 10:52:36,371 basehttp 8301 140712266880768 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 10:52:41,860 autoreload 8301 140712968917120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:42,918 autoreload 8354 140281557340288 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:44,883 autoreload 8354 140281557340288 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:45,739 autoreload 8385 140540941365376 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:52,933 autoreload 8385 140540941365376 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:54,045 autoreload 8419 140122220593280 Watching for file changes with StatReloader
+INFO 2023-05-12 10:52:56,520 autoreload 8419 140122220593280 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:52:56,921 autoreload 8442 140213033320576 Watching for file changes with StatReloader
+ERROR 2023-05-12 10:53:20,900 log 8442 140212331276032 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 47, in post
+    ser.save()
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 731, in save
+    self.instance = self.create(validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 703, in create
+    return [
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 704, in <listcomp>
+    self.child.create(attrs) for attrs in validated_data
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+ERROR 2023-05-12 10:53:20,919 basehttp 8442 140212331276032 "POST /api/student/multi_create/ HTTP/1.1" 500 242485
+INFO 2023-05-12 10:53:43,463 autoreload 8442 140213033320576 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:44,023 autoreload 8576 140460099199104 Watching for file changes with StatReloader
+INFO 2023-05-12 10:53:46,250 autoreload 8576 140460099199104 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:46,704 autoreload 8599 140530607775872 Watching for file changes with StatReloader
+INFO 2023-05-12 10:53:47,986 autoreload 8599 140530607775872 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:48,444 autoreload 8601 140031831261312 Watching for file changes with StatReloader
+INFO 2023-05-12 10:53:52,150 autoreload 8601 140031831261312 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:53,208 autoreload 8632 139935185657984 Watching for file changes with StatReloader
+INFO 2023-05-12 10:53:55,376 autoreload 8632 139935185657984 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:56,440 autoreload 8658 140238159356032 Watching for file changes with StatReloader
+INFO 2023-05-12 10:53:58,483 autoreload 8658 140238159356032 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:53:59,460 autoreload 8676 140059750314112 Watching for file changes with StatReloader
+INFO 2023-05-12 10:54:01,548 autoreload 8676 140059750314112 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:54:02,748 autoreload 8707 140410316562560 Watching for file changes with StatReloader
+INFO 2023-05-12 10:54:04,832 autoreload 8707 140410316562560 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 10:54:05,689 autoreload 8730 140253345460352 Watching for file changes with StatReloader
+INFO 2023-05-12 10:54:08,226 basehttp 8730 140252643419904 "POST /api/student/multi_create/ HTTP/1.1" 200 178
+INFO 2023-05-12 10:54:21,823 basehttp 8730 140252643419904 "GET /api/student/students/ HTTP/1.1" 200 1257
+INFO 2023-05-12 10:55:06,721 autoreload 8730 140253345460352 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:55:07,990 autoreload 8872 139721802358912 Watching for file changes with StatReloader
+INFO 2023-05-12 10:55:10,427 autoreload 8872 139721802358912 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:55:11,358 autoreload 8895 140291600670848 Watching for file changes with StatReloader
+INFO 2023-05-12 10:55:15,925 autoreload 8895 140291600670848 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:55:16,844 autoreload 8918 140602365014144 Watching for file changes with StatReloader
+INFO 2023-05-12 10:55:20,916 autoreload 8918 140602365014144 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:55:21,937 autoreload 8949 140641749684352 Watching for file changes with StatReloader
+INFO 2023-05-12 10:55:24,461 autoreload 8949 140641749684352 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 10:55:25,398 autoreload 8965 140332808237184 Watching for file changes with StatReloader
+INFO 2023-05-12 11:02:42,101 autoreload 8965 140332808237184 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:02:43,183 autoreload 9101 139730598838400 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:08,649 autoreload 9101 139730598838400 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:09,293 autoreload 9150 139853368270976 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:13,053 autoreload 9150 139853368270976 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:13,532 autoreload 9181 139668749131904 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:43,573 autoreload 9181 139668749131904 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:44,632 autoreload 9308 140328262070400 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:47,052 autoreload 9308 140328262070400 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:47,927 autoreload 9328 139659278082176 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:51,405 autoreload 9328 139659278082176 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:52,400 autoreload 9344 140250899202176 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:53,797 autoreload 9344 140250899202176 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:54,692 autoreload 9352 140065209712768 Watching for file changes with StatReloader
+INFO 2023-05-12 11:03:58,879 autoreload 9352 140065209712768 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:03:59,959 autoreload 9383 140536839475328 Watching for file changes with StatReloader
+INFO 2023-05-12 11:04:02,936 autoreload 9383 140536839475328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:04:03,999 autoreload 9414 139816105623680 Watching for file changes with StatReloader
+INFO 2023-05-12 11:05:26,209 autoreload 9414 139816105623680 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 11:05:27,163 autoreload 9560 140524834504832 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:17,931 autoreload 1405 140068282028160 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:21,426 basehttp 1405 140067580000000 "POST /api/student/multi_create/ HTTP/1.1" 200 178
+INFO 2023-05-12 12:52:34,179 autoreload 1405 140068282028160 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:34,661 autoreload 1558 139687957938304 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:38,371 autoreload 1558 139687957938304 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:38,816 autoreload 1589 139992573870208 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:41,073 autoreload 1589 139992573870208 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:41,496 autoreload 1605 140175643181184 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:44,140 autoreload 1605 140175643181184 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:44,566 autoreload 1624 139623261294720 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:46,822 autoreload 1624 139623261294720 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:47,198 autoreload 1647 140134146875520 Watching for file changes with StatReloader
+INFO 2023-05-12 12:52:50,465 autoreload 1647 140134146875520 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:52:50,854 autoreload 1649 140298378489984 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:01,216 autoreload 1649 140298378489984 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:53:01,666 autoreload 1696 140353274503296 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:04,958 autoreload 1696 140353274503296 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:53:05,354 autoreload 1719 140155867758720 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:06,595 autoreload 1719 140155867758720 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:53:07,043 autoreload 1721 139968498860160 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:17,412 autoreload 1721 139968498860160 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:53:17,804 autoreload 1762 140352660918400 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:21,099 autoreload 1762 140352660918400 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:53:21,496 autoreload 1785 140046002540672 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:49,563 autoreload 1921 140606297788544 Watching for file changes with StatReloader
+INFO 2023-05-12 12:53:52,680 basehttp 1921 140605595744000 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:54:30,799 autoreload 1921 140606297788544 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:54:31,281 autoreload 1974 140220676247680 Watching for file changes with StatReloader
+INFO 2023-05-12 12:54:38,994 autoreload 2018 140151996625024 Watching for file changes with StatReloader
+INFO 2023-05-12 12:54:41,557 basehttp 2018 140151294592768 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:54:53,051 basehttp 2018 140151294592768 "GET /api/student/students/ HTTP/1.1" 200 1257
+INFO 2023-05-12 12:55:47,724 autoreload 2018 140151996625024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:55:48,204 autoreload 2167 139909440782464 Watching for file changes with StatReloader
+INFO 2023-05-12 12:55:49,783 autoreload 2167 139909440782464 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:55:50,226 autoreload 2193 140350008385664 Watching for file changes with StatReloader
+INFO 2023-05-12 12:55:53,513 autoreload 2193 140350008385664 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:55:53,933 autoreload 2200 140694163394688 Watching for file changes with StatReloader
+INFO 2023-05-12 12:55:56,196 autoreload 2200 140694163394688 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:55:56,573 autoreload 2223 140418323509376 Watching for file changes with StatReloader
+INFO 2023-05-12 12:55:58,821 autoreload 2223 140418323509376 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:55:59,197 autoreload 2225 139753139089536 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:03,471 autoreload 2225 139753139089536 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:03,866 autoreload 2248 140656055787648 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:07,169 autoreload 2248 140656055787648 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:07,556 autoreload 2271 140170771271808 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:10,771 autoreload 2271 140170771271808 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:11,160 autoreload 2294 140290306121856 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:13,433 autoreload 2294 140290306121856 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:13,860 autoreload 2296 140455475798144 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:15,498 autoreload 2296 140455475798144 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:15,965 autoreload 2327 140410621440128 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:17,604 autoreload 2327 140410621440128 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:18,051 autoreload 2340 139923540115584 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:19,707 autoreload 2340 139923540115584 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:20,215 autoreload 2366 139989835481216 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:22,110 basehttp 2366 139989134231296 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:56:25,870 basehttp 2366 139989134231296 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:56:29,080 autoreload 2366 139989835481216 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:29,666 autoreload 2406 140045848883328 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:32,160 basehttp 2406 140045146851072 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:56:38,319 basehttp 2406 140045146851072 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:56:51,735 autoreload 2406 140045848883328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:52,196 autoreload 2555 139655911682176 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:55,947 autoreload 2555 139655911682176 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:56:56,429 autoreload 2586 140528898650240 Watching for file changes with StatReloader
+INFO 2023-05-12 12:56:58,790 basehttp 2586 140528196622080 "POST /api/student/multi_create/ HTTP/1.1" 200 174
+INFO 2023-05-12 12:57:13,416 autoreload 2586 140528898650240 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:57:13,968 autoreload 2618 140263617179776 Watching for file changes with StatReloader
+INFO 2023-05-12 12:57:15,558 basehttp 2618 140262915933952 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:57:46,229 autoreload 2618 140263617179776 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:57:46,809 autoreload 2671 139939743293568 Watching for file changes with StatReloader
+INFO 2023-05-12 12:57:48,974 basehttp 2671 139939041253120 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:57:59,174 basehttp 2671 139939041253120 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:58:11,918 basehttp 2671 139939041253120 "GET /api/student/students/ HTTP/1.1" 200 1257
+INFO 2023-05-12 12:58:17,781 basehttp 2671 139939041253120 "POST /api/student/multi_create/ HTTP/1.1" 200 73
+INFO 2023-05-12 12:58:23,032 autoreload 2671 139939743293568 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 12:58:23,642 autoreload 2823 140212414877824 Watching for file changes with StatReloader
+INFO 2023-05-12 12:58:25,081 basehttp 2823 140211713611520 "POST /api/student/multi_create/ HTTP/1.1" 200 178
+INFO 2023-05-12 13:00:15,926 autoreload 2823 140212414877824 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:00:16,398 autoreload 2972 140268500762752 Watching for file changes with StatReloader
+INFO 2023-05-12 13:00:33,186 autoreload 2972 140268500762752 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:00:33,717 autoreload 3021 139681064824960 Watching for file changes with StatReloader
+INFO 2023-05-12 13:00:36,505 basehttp 3021 139680362784512 "POST /api/student/multi_create/ HTTP/1.1" 200 349
+INFO 2023-05-12 13:01:17,253 autoreload 3021 139681064824960 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:01:17,779 autoreload 3170 140479573422208 Watching for file changes with StatReloader
+INFO 2023-05-12 13:01:19,382 autoreload 3170 140479573422208 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:01:19,874 autoreload 3193 140442169843840 Watching for file changes with StatReloader
+INFO 2023-05-12 13:01:23,641 basehttp 3193 140441467811584 "POST /api/student/multi_create/ HTTP/1.1" 200 403
+INFO 2023-05-12 13:02:09,528 autoreload 3193 140442169843840 /opt/ldzxProject/utils/funcs.py changed, reloading.
+INFO 2023-05-12 13:02:10,017 autoreload 3452 140501809557632 Watching for file changes with StatReloader
+INFO 2023-05-12 13:02:12,202 autoreload 3452 140501809557632 /opt/ldzxProject/utils/funcs.py changed, reloading.
+INFO 2023-05-12 13:06:28,884 autoreload 3768 140469168840832 Watching for file changes with StatReloader
+INFO 2023-05-12 13:06:30,972 basehttp 3768 140468466804480 "POST /api/student/multi_create/ HTTP/1.1" 200 474
+INFO 2023-05-12 13:07:21,394 autoreload 3768 140469168840832 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:07:21,965 autoreload 3917 139902799487104 Watching for file changes with StatReloader
+INFO 2023-05-12 13:07:25,544 basehttp 3917 139902097438464 "POST /api/student/multi_create/ HTTP/1.1" 200 520
+INFO 2023-05-12 13:07:53,245 autoreload 3917 139902799487104 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:07:53,748 autoreload 3970 140650116579456 Watching for file changes with StatReloader
+INFO 2023-05-12 13:07:55,346 autoreload 3970 140650116579456 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:07:55,798 autoreload 3993 140230793306240 Watching for file changes with StatReloader
+INFO 2023-05-12 13:07:56,978 autoreload 3993 140230793306240 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:07:57,398 autoreload 4000 140070000889984 Watching for file changes with StatReloader
+INFO 2023-05-12 13:07:58,611 autoreload 4000 140070000889984 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:07:59,024 autoreload 4002 139968680771712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:03,228 autoreload 4002 139968680771712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:03,665 autoreload 4025 140680182083712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:06,936 autoreload 4025 140680182083712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:07,351 autoreload 4048 140613847814272 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:08,621 autoreload 4048 140613847814272 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:09,105 autoreload 4050 139876571160704 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:10,283 autoreload 4050 139876571160704 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:10,707 autoreload 4063 139967004487808 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:14,992 autoreload 4063 139967004487808 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:15,389 autoreload 4085 140185258209408 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:17,572 autoreload 4085 140185258209408 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:17,987 autoreload 4096 140697386221696 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:25,300 autoreload 4096 140697386221696 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:25,747 autoreload 4215 140324459815040 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:28,021 autoreload 4215 140324459815040 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:28,489 autoreload 4238 140038920368256 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:30,749 autoreload 4238 140038920368256 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:31,181 autoreload 4240 140096588722304 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:33,489 autoreload 4240 140096588722304 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:33,930 autoreload 4263 140687087132800 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:39,263 autoreload 4263 140687087132800 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:39,694 autoreload 4286 140260436725888 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:43,964 autoreload 4286 140260436725888 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:44,424 autoreload 4309 139973139439744 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:48,717 autoreload 4309 139973139439744 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:49,117 autoreload 4332 139714428903552 Watching for file changes with StatReloader
+INFO 2023-05-12 13:08:53,381 autoreload 4332 139714428903552 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:08:53,875 autoreload 4355 140233615118464 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:06,174 autoreload 4355 140233615118464 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:06,631 autoreload 4378 140380758040704 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:09,917 autoreload 4378 140380758040704 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:10,453 autoreload 4401 140485707739264 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:12,715 autoreload 4401 140485707739264 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:13,256 autoreload 4417 140058952806528 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:15,471 autoreload 4417 140058952806528 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:16,012 autoreload 4425 140638315937920 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:20,257 autoreload 4425 140638315937920 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:20,702 autoreload 4448 140340028530816 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:22,986 autoreload 4448 140340028530816 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:23,431 autoreload 4464 139936592724096 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:26,005 basehttp 4464 139935890683648 "POST /api/student/multi_create/ HTTP/1.1" 200 520
+INFO 2023-05-12 13:09:38,418 autoreload 4464 139936592724096 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:09:38,927 autoreload 4601 139826840690816 Watching for file changes with StatReloader
+INFO 2023-05-12 13:09:42,012 basehttp 4601 139826138658560 "POST /api/student/multi_create/ HTTP/1.1" 200 143
+INFO 2023-05-12 13:10:46,396 basehttp 4601 139826138658560 "POST /api/student/multi_create/ HTTP/1.1" 200 202
+INFO 2023-05-12 13:11:24,201 autoreload 4730 140608913936512 Watching for file changes with StatReloader
+INFO 2023-05-12 13:12:04,387 basehttp 4730 140607826962176 "POST /api/student/multi_create/ HTTP/1.1" 200 143
+INFO 2023-05-12 13:13:08,751 autoreload 4730 140608913936512 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:13:10,556 autoreload 4970 140411968065664 Watching for file changes with StatReloader
+INFO 2023-05-12 13:13:26,640 autoreload 4970 140411968065664 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:13:28,743 autoreload 5041 139991064608896 Watching for file changes with StatReloader
+INFO 2023-05-12 13:13:31,222 autoreload 5041 139991064608896 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:13:32,762 autoreload 5088 139913885040768 Watching for file changes with StatReloader
+INFO 2023-05-12 13:13:48,711 autoreload 5088 139913885040768 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:13:50,678 autoreload 5159 140583911153792 Watching for file changes with StatReloader
+INFO 2023-05-12 13:13:53,317 autoreload 5159 140583911153792 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:13:55,142 autoreload 5206 140596471976064 Watching for file changes with StatReloader
+INFO 2023-05-12 13:14:10,468 autoreload 5206 140596471976064 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:14:12,216 autoreload 5388 140406742745216 Watching for file changes with StatReloader
+INFO 2023-05-12 13:14:37,047 basehttp 5388 140405655766784 "POST /api/student/multi_create/ HTTP/1.1" 200 460
+INFO 2023-05-12 13:14:47,079 autoreload 5551 140414367441024 Watching for file changes with StatReloader
+INFO 2023-05-12 13:14:50,077 basehttp 5551 140413665384192 "POST /api/student/multi_create/ HTTP/1.1" 200 460
+INFO 2023-05-12 13:15:06,183 autoreload 5551 140414367441024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:06,720 autoreload 5607 140303100502144 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:11,056 autoreload 5607 140303100502144 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:11,503 autoreload 5726 140679344177280 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:28,327 autoreload 5726 140679344177280 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:28,798 autoreload 5775 140027043471488 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:31,431 autoreload 5775 140027043471488 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:32,016 autoreload 5806 140711432515712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:34,298 autoreload 5806 140711432515712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:34,724 autoreload 5808 140508789858432 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:37,010 autoreload 5808 140508789858432 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:37,469 autoreload 5831 140524761923712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:38,678 autoreload 5831 140524761923712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:39,178 autoreload 5833 139980423340160 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:40,823 autoreload 5833 139980423340160 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:41,358 autoreload 5861 139939278639232 Watching for file changes with StatReloader
+INFO 2023-05-12 13:15:57,259 autoreload 5861 139939278639232 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:15:57,784 autoreload 5898 140708440723584 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:00,123 autoreload 5898 140708440723584 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:00,541 autoreload 5921 140430912360576 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:03,804 autoreload 5921 140430912360576 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:04,254 autoreload 5934 139777958490240 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:11,515 autoreload 5934 139777958490240 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:11,971 autoreload 6062 140416572567680 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:15,245 autoreload 6062 140416572567680 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:15,719 autoreload 6085 140158957981824 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:17,339 autoreload 6085 140158957981824 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:17,821 autoreload 6098 140696763547776 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:19,518 autoreload 6098 140696763547776 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:20,050 autoreload 6121 139849000616064 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:25,776 autoreload 6121 139849000616064 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:26,326 autoreload 6160 140317885165696 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:28,937 autoreload 6160 140317885165696 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:29,386 autoreload 6187 140129917653120 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:31,067 autoreload 6187 140129917653120 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:16:31,565 autoreload 6206 140365096657024 Watching for file changes with StatReloader
+INFO 2023-05-12 13:16:38,650 basehttp 6206 140364394620672 "POST /api/student/multi_create/ HTTP/1.1" 200 446
+INFO 2023-05-12 13:18:57,337 basehttp 6206 140364394620672 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 13:19:01,965 basehttp 6206 140364394620672 "POST /api/student/multi_create/ HTTP/1.1" 200 465
+INFO 2023-05-12 13:19:14,181 autoreload 6206 140365096657024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 13:19:14,692 autoreload 6360 140021032767616 Watching for file changes with StatReloader
+INFO 2023-05-12 13:19:25,507 autoreload 6360 140021032767616 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:19:26,025 autoreload 6505 140559392268416 Watching for file changes with StatReloader
+INFO 2023-05-12 13:19:28,519 basehttp 6505 140558690240256 "POST /api/student/multi_create/ HTTP/1.1" 200 89
+INFO 2023-05-12 13:19:35,906 basehttp 6505 140558690240256 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 13:19:40,402 basehttp 6505 140558690240256 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 13:20:34,745 autoreload 6505 140559392268416 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:20:35,186 autoreload 6657 140053752098944 Watching for file changes with StatReloader
+INFO 2023-05-12 13:20:38,484 autoreload 6657 140053752098944 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:20:38,911 autoreload 6680 139875274944640 Watching for file changes with StatReloader
+INFO 2023-05-12 13:20:41,152 autoreload 6680 139875274944640 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:20:41,540 autoreload 6693 140330424537216 Watching for file changes with StatReloader
+INFO 2023-05-12 13:20:43,242 autoreload 6693 140330424537216 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:20:43,720 autoreload 6712 139895236862080 Watching for file changes with StatReloader
+INFO 2023-05-12 13:20:47,392 autoreload 6712 139895236862080 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:20:47,885 autoreload 6746 139700025237632 Watching for file changes with StatReloader
+ERROR 2023-05-12 13:20:50,771 log 6746 139699323197184 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 50, in post
+    return Response(ser.error,sstatus=status.HTTP_400_BAD_REQUEST)
+AttributeError: 'ListSerializer' object has no attribute 'error'
+ERROR 2023-05-12 13:20:50,772 basehttp 6746 139699323197184 "POST /api/student/multi_create/ HTTP/1.1" 500 96621
+INFO 2023-05-12 13:21:02,088 autoreload 6746 139700025237632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:21:02,666 autoreload 6784 140645457887360 Watching for file changes with StatReloader
+ERROR 2023-05-12 13:21:06,284 log 6784 140644755842816 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 50, in post
+    return Response(ser.error,status=status.HTTP_400_BAD_REQUEST)
+AttributeError: 'ListSerializer' object has no attribute 'error'
+ERROR 2023-05-12 13:21:06,284 basehttp 6784 140644755842816 "POST /api/student/multi_create/ HTTP/1.1" 500 96619
+INFO 2023-05-12 13:21:10,566 autoreload 6784 140645457887360 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:21:11,090 autoreload 6834 140567944368256 Watching for file changes with StatReloader
+WARNING 2023-05-12 13:21:12,985 log 6834 140567243114240 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:21:12,985 basehttp 6834 140567243114240 "POST /api/student/multi_create/ HTTP/1.1" 400 89
+INFO 2023-05-12 13:21:19,861 basehttp 6834 140567243114240 "GET /api/student/students/ HTTP/1.1" 200 1056
+ERROR 2023-05-12 13:21:36,079 log 6834 140567243114240 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 47, in post
+    ser.save()
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 731, in save
+    self.instance = self.create(validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 703, in create
+    return [
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 704, in <listcomp>
+    self.child.create(attrs) for attrs in validated_data
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+ERROR 2023-05-12 13:21:36,081 basehttp 6834 140567243114240 "POST /api/student/multi_create/ HTTP/1.1" 500 241455
+INFO 2023-05-12 13:21:56,420 basehttp 6834 140567243114240 "GET /api/student/students/ HTTP/1.1" 200 1257
+WARNING 2023-05-12 13:23:19,814 log 6834 140567243114240 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:23:19,814 basehttp 6834 140567243114240 "POST /api/student/multi_create/ HTTP/1.1" 400 150
+INFO 2023-05-12 13:24:11,876 autoreload 6834 140567944368256 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:24:12,522 autoreload 6971 139824737919104 Watching for file changes with StatReloader
+INFO 2023-05-12 13:24:20,245 autoreload 6971 139824737919104 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:24:20,706 autoreload 7020 140432148848768 Watching for file changes with StatReloader
+INFO 2023-05-12 13:24:23,328 autoreload 7020 140432148848768 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:24:23,790 autoreload 7036 140012721488000 Watching for file changes with StatReloader
+ERROR 2023-05-12 13:24:27,831 log 7036 140012019439360 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 48, in post
+    ser.save()
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 731, in save
+    self.instance = self.create(validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 703, in create
+    return [
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 704, in <listcomp>
+    self.child.create(attrs) for attrs in validated_data
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '513323197501303520' for key 'PRIMARY'")
+ERROR 2023-05-12 13:24:27,844 basehttp 7036 140012019439360 "POST /api/student/multi_create/ HTTP/1.1" 500 241455
+INFO 2023-05-12 13:27:06,402 autoreload 7036 140012721488000 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:06,943 autoreload 7206 140019707129984 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:08,672 autoreload 7206 140019707129984 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:09,143 autoreload 7232 140593005707392 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:10,773 autoreload 7232 140593005707392 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:11,273 autoreload 7250 140036960989312 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:20,028 autoreload 7250 140036960989312 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:20,532 autoreload 7281 139915091529856 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:23,799 autoreload 7281 139915091529856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:24,215 autoreload 7304 140441336197248 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:26,845 autoreload 7304 140441336197248 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:27,338 autoreload 7330 140634210459776 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:48,285 autoreload 7330 140634210459776 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:48,806 autoreload 7369 140442009231488 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:51,439 autoreload 7369 140442009231488 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:52,011 autoreload 7400 140428819492992 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:53,686 autoreload 7400 140428819492992 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:54,213 autoreload 7413 140517939155072 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:56,875 autoreload 7413 140517939155072 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:57,363 autoreload 7444 140213066649728 Watching for file changes with StatReloader
+INFO 2023-05-12 13:27:59,218 autoreload 7444 140213066649728 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:27:59,735 autoreload 7457 139623686459520 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:01,407 autoreload 7457 139623686459520 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:01,949 autoreload 7488 140061252231296 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:04,615 autoreload 7488 140061252231296 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:05,192 autoreload 7504 139985340293248 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:07,465 autoreload 7504 139985340293248 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:07,944 autoreload 7620 140590347534464 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:11,169 autoreload 7620 140590347534464 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:11,620 autoreload 7643 140712418164864 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:13,300 autoreload 7643 140712418164864 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:13,798 autoreload 7659 140280400859264 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:15,476 autoreload 7659 140280400859264 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:15,961 autoreload 7682 140112712691840 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:17,602 autoreload 7682 140112712691840 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:18,141 autoreload 7700 139938012041344 Watching for file changes with StatReloader
+INFO 2023-05-12 13:28:30,941 autoreload 7700 139938012041344 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:28:31,421 autoreload 7734 140235147133056 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:12,642 autoreload 7734 140235147133056 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:13,171 autoreload 7879 139643034636416 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:14,858 autoreload 7879 139643034636416 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:15,498 autoreload 7905 140534555873408 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:18,808 autoreload 7905 140534555873408 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:19,303 autoreload 7912 139763380076672 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:21,040 autoreload 7912 139763380076672 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:21,601 autoreload 7946 140647697285248 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:25,299 autoreload 7946 140647697285248 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:25,808 autoreload 7980 140129938587776 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:28,528 autoreload 7980 140129938587776 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:29,110 autoreload 7993 139640298033280 Watching for file changes with StatReloader
+INFO 2023-05-12 13:29:30,777 autoreload 7993 139640298033280 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:29:31,322 autoreload 8027 139856779272320 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:04,170 autoreload 8027 139856779272320 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:04,723 autoreload 8157 140609965691008 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:10,615 autoreload 8157 140609965691008 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:11,123 autoreload 8198 139899555213440 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:15,844 autoreload 8198 139899555213440 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:16,423 autoreload 8232 139753025826944 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:19,068 autoreload 8232 139753025826944 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:19,607 autoreload 8254 140406909517952 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:21,288 autoreload 8254 140406909517952 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:21,785 autoreload 8277 139802323632256 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:25,098 basehttp 8277 139801621604096 "POST /api/student/multi_create/ HTTP/1.1" 200 59
+WARNING 2023-05-12 13:33:41,062 log 8277 139801621604096 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:33:41,062 basehttp 8277 139801621604096 "POST /api/student/multi_create/ HTTP/1.1" 400 105
+INFO 2023-05-12 13:33:45,995 autoreload 8277 139802323632256 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:46,538 autoreload 8353 139840756043904 Watching for file changes with StatReloader
+INFO 2023-05-12 13:33:50,365 autoreload 8353 139840756043904 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:33:50,918 autoreload 8384 140058329383040 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:00,818 autoreload 8384 140058329383040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:01,351 autoreload 8415 140522309415040 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:03,037 autoreload 8415 140522309415040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:03,542 autoreload 8438 139867788492928 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:05,335 autoreload 8438 139867788492928 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:05,874 autoreload 8552 140207560024192 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:07,528 autoreload 8552 140207560024192 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:08,007 autoreload 8575 140716067410048 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:15,762 autoreload 8575 140716067410048 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:16,274 autoreload 8614 140344489386112 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:18,928 autoreload 8614 140344489386112 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:19,408 autoreload 8645 139952780198016 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:21,051 autoreload 8645 139952780198016 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:21,544 autoreload 8658 139924993986688 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:23,145 autoreload 8658 139924993986688 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:23,631 autoreload 8684 139862263836800 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:27,410 autoreload 8684 139862263836800 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:27,869 autoreload 8716 139728961392768 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:29,522 autoreload 8716 139728961392768 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:30,027 autoreload 8735 140566919499904 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:31,694 autoreload 8735 140566919499904 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:32,147 autoreload 8748 140250415394944 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:36,829 autoreload 8748 140250415394944 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:37,290 autoreload 8782 140018327871616 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:51,104 autoreload 8782 140018327871616 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:51,587 autoreload 8837 140711756263552 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:53,225 autoreload 8837 140711756263552 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:53,716 autoreload 8860 140135561982080 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:55,428 autoreload 8860 140135561982080 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:55,902 autoreload 8878 139644215857280 Watching for file changes with StatReloader
+INFO 2023-05-12 13:34:59,540 autoreload 8878 139644215857280 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:34:59,998 autoreload 8909 140003540664448 Watching for file changes with StatReloader
+INFO 2023-05-12 13:35:02,281 autoreload 8909 140003540664448 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:35:02,880 autoreload 8911 140065459413120 Watching for file changes with StatReloader
+INFO 2023-05-12 13:35:04,845 basehttp 8911 140064758167296 "POST /api/student/multi_create/ HTTP/1.1" 200 66
+INFO 2023-05-12 13:35:25,619 basehttp 8911 140064758167296 "POST /api/student/multi_create/ HTTP/1.1" 200 79
+ERROR 2023-05-12 13:35:36,865 log 8911 140064758167296 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 38, in post
+    if duplicates:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+ERROR 2023-05-12 13:35:36,865 basehttp 8911 140064758167296 "POST /api/student/multi_create/ HTTP/1.1" 500 93759
+ERROR 2023-05-12 13:35:40,673 log 8911 140064758167296 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 38, in post
+    if duplicates:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+ERROR 2023-05-12 13:35:40,674 basehttp 8911 140064758167296 "POST /api/student/multi_create/ HTTP/1.1" 500 93759
+INFO 2023-05-12 13:35:51,637 autoreload 8911 140065459413120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:35:52,384 autoreload 9126 140250375966848 Watching for file changes with StatReloader
+INFO 2023-05-12 13:35:55,219 autoreload 9126 140250375966848 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:35:55,831 autoreload 9157 140019648360576 Watching for file changes with StatReloader
+INFO 2023-05-12 13:35:58,654 basehttp 9157 140018946320128 "POST /api/student/multi_create/ HTTP/1.1" 200 63
+INFO 2023-05-12 13:36:08,047 autoreload 9157 140019648360576 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:36:08,642 autoreload 9213 140338852864128 Watching for file changes with StatReloader
+ERROR 2023-05-12 13:36:25,357 log 9213 140338150835968 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 38, in post
+    if duplicates:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+ERROR 2023-05-12 13:36:25,357 basehttp 9213 140338150835968 "POST /api/student/multi_create/ HTTP/1.1" 500 93759
+INFO 2023-05-12 13:36:37,839 autoreload 9213 140338852864128 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:36:38,476 autoreload 9284 140095695462528 Watching for file changes with StatReloader
+INFO 2023-05-12 13:36:40,404 basehttp 9284 140094994204416 "POST /api/student/multi_create/ HTTP/1.1" 200 63
+INFO 2023-05-12 13:40:32,594 autoreload 9612 139875570868352 Watching for file changes with StatReloader
+WARNING 2023-05-12 13:40:36,959 log 9612 139874868823808 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:40:36,960 basehttp 9612 139874868823808 "POST /api/student/multi_create/ HTTP/1.1" 400 150
+INFO 2023-05-12 13:40:54,682 autoreload 9612 139875570868352 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:40:55,292 autoreload 9683 139849865597056 Watching for file changes with StatReloader
+INFO 2023-05-12 13:40:58,181 autoreload 9683 139849865597056 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:40:58,777 autoreload 9714 140282093764736 Watching for file changes with StatReloader
+WARNING 2023-05-12 13:41:01,953 log 9714 140281391728384 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:41:01,953 basehttp 9714 140281391728384 "POST /api/student/multi_create/ HTTP/1.1" 400 150
+INFO 2023-05-12 13:41:11,802 autoreload 9714 140282093764736 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:41:12,343 autoreload 9770 139888168685696 Watching for file changes with StatReloader
+INFO 2023-05-12 13:41:15,325 autoreload 9770 139888168685696 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:41:15,903 autoreload 9801 140548951982208 Watching for file changes with StatReloader
+WARNING 2023-05-12 13:41:17,579 log 9801 140548250740480 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:41:17,580 basehttp 9801 140548250740480 "POST /api/student/multi_create/ HTTP/1.1" 400 150
+INFO 2023-05-12 13:41:33,980 autoreload 9801 140548951982208 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:41:34,509 autoreload 9947 140496269168768 Watching for file changes with StatReloader
+INFO 2023-05-12 13:41:38,240 autoreload 9947 140496269168768 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:41:38,760 autoreload 9978 139946769080448 Watching for file changes with StatReloader
+INFO 2023-05-12 13:41:43,000 basehttp 9978 139946067040000 "POST /api/student/multi_create/ HTTP/1.1" 200 99
+INFO 2023-05-12 13:41:58,004 basehttp 9978 139946067040000 "POST /api/student/multi_create/ HTTP/1.1" 200 79
+WARNING 2023-05-12 13:42:05,208 log 9978 139946067040000 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:42:05,208 basehttp 9978 139946067040000 "POST /api/student/multi_create/ HTTP/1.1" 400 105
+ERROR 2023-05-12 13:42:16,744 log 9978 139946067040000 Internal Server Error: /api/student/multi_create/
+Traceback (most recent call last):
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/mk/anaconda3/envs/web1/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/opt/ldzxProject/student/views.py", line 45, in post
+    if duplicates:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+ERROR 2023-05-12 13:42:16,745 basehttp 9978 139946067040000 "POST /api/student/multi_create/ HTTP/1.1" 500 93618
+INFO 2023-05-12 13:42:24,438 autoreload 9978 139946769080448 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:42:25,021 autoreload 10121 140593147797632 Watching for file changes with StatReloader
+INFO 2023-05-12 13:42:26,731 autoreload 10121 140593147797632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:42:27,225 autoreload 10137 139815252467840 Watching for file changes with StatReloader
+INFO 2023-05-12 13:42:31,339 basehttp 10137 139814550411008 "POST /api/student/multi_create/ HTTP/1.1" 200 76
+INFO 2023-05-12 13:43:02,960 autoreload 10137 139815252467840 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:03,583 autoreload 10286 139918414176384 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:05,298 autoreload 10286 139918414176384 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:05,838 autoreload 10312 139912380149888 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:08,519 autoreload 10312 139912380149888 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:09,175 autoreload 10330 140535677214848 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:12,872 autoreload 10330 140535677214848 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:13,387 autoreload 10364 140441527869568 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:16,098 autoreload 10364 140441527869568 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:16,629 autoreload 10395 139886122463360 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:18,308 autoreload 10395 139886122463360 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:18,844 autoreload 10408 140393999122560 Watching for file changes with StatReloader
+INFO 2023-05-12 13:43:20,480 autoreload 10408 140393999122560 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:43:20,980 autoreload 10436 140127576842368 Watching for file changes with StatReloader
+WARNING 2023-05-12 13:46:22,060 log 10436 140126874801920 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 13:46:22,060 basehttp 10436 140126874801920 "POST /api/student/multi_create/ HTTP/1.1" 400 105
+INFO 2023-05-12 13:46:30,384 autoreload 10436 140127576842368 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:46:30,972 autoreload 10570 139723908960384 Watching for file changes with StatReloader
+INFO 2023-05-12 13:46:32,673 autoreload 10570 139723908960384 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:46:33,179 autoreload 10593 140351918108800 Watching for file changes with StatReloader
+INFO 2023-05-12 13:46:34,801 autoreload 10593 140351918108800 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:46:35,359 autoreload 10611 140432375349376 Watching for file changes with StatReloader
+INFO 2023-05-12 13:46:37,017 autoreload 10611 140432375349376 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:46:37,506 autoreload 10637 140677931282560 Watching for file changes with StatReloader
+INFO 2023-05-12 13:46:42,192 autoreload 10637 140677931282560 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:46:42,706 autoreload 10669 139795444101248 Watching for file changes with StatReloader
+INFO 2023-05-12 13:47:08,408 basehttp 10669 139794742068992 "POST /api/student/multi_create/ HTTP/1.1" 201 1207
+INFO 2023-05-12 13:47:12,203 basehttp 10669 139794742068992 "GET /api/student/students/ HTTP/1.1" 200 2110
+INFO 2023-05-12 13:47:49,386 autoreload 10669 139795444101248 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:47:49,909 autoreload 10812 139865166815360 Watching for file changes with StatReloader
+INFO 2023-05-12 13:47:51,572 autoreload 10812 139865166815360 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:47:52,121 autoreload 10838 140049503043712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:47:56,854 autoreload 10838 140049503043712 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:47:57,569 autoreload 10877 139805442773120 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:01,296 autoreload 10877 139805442773120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:01,898 autoreload 10904 139850348683392 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:04,195 autoreload 10904 139850348683392 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:04,633 autoreload 10912 140235977937024 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:08,925 autoreload 10912 140235977937024 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:09,394 autoreload 10935 139633575506048 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:11,673 autoreload 10935 139633575506048 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:12,142 autoreload 10951 139800570941568 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:14,417 autoreload 10951 139800570941568 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:14,908 autoreload 10959 140684596994176 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:19,206 autoreload 10959 140684596994176 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:19,767 autoreload 10982 140317890048128 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:22,362 autoreload 10982 140317890048128 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:22,896 autoreload 11013 140062593740928 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:25,173 autoreload 11013 140062593740928 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:25,719 autoreload 11015 139676199637120 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:42,754 autoreload 11015 139676199637120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:43,299 autoreload 11067 140562058469504 Watching for file changes with StatReloader
+INFO 2023-05-12 13:48:46,604 autoreload 11067 140562058469504 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:48:47,051 autoreload 11090 139796655718528 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:34,886 autoreload 11090 139796655718528 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:35,346 autoreload 11209 140134309671040 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:38,648 autoreload 11209 140134309671040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:39,089 autoreload 11232 139642757070976 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:42,738 autoreload 11232 139642757070976 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:43,277 autoreload 11263 140389472637056 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:46,973 autoreload 11263 140389472637056 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:47,517 autoreload 11290 140509902536832 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:53,263 autoreload 11290 140509902536832 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:53,781 autoreload 11330 139673670217856 Watching for file changes with StatReloader
+INFO 2023-05-12 13:49:59,487 autoreload 11330 139673670217856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:49:59,922 autoreload 11364 140500063400064 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:01,499 autoreload 11364 140500063400064 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:02,030 autoreload 11387 140227942736000 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:05,782 autoreload 11387 140227942736000 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:06,311 autoreload 11408 140684726894720 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:09,594 autoreload 11408 140684726894720 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:10,001 autoreload 11431 140055184666752 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:12,653 autoreload 11431 140055184666752 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:13,146 autoreload 11459 140053345611904 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:35,068 autoreload 11459 140053345611904 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:35,591 autoreload 11592 139821475229824 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:38,901 autoreload 11592 139821475229824 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:39,396 autoreload 11615 139820441608320 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:42,680 autoreload 11615 139820441608320 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:43,143 autoreload 11638 140237077942400 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:45,418 autoreload 11638 140237077942400 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:45,856 autoreload 11640 140028790997120 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:50,080 autoreload 11640 140028790997120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:50,526 autoreload 11663 140526822932608 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:51,713 autoreload 11663 140526822932608 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:52,183 autoreload 11677 139660550217856 Watching for file changes with StatReloader
+INFO 2023-05-12 13:50:56,475 autoreload 11677 139660550217856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:50:56,969 autoreload 11687 140510365810816 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:00,359 autoreload 11687 140510365810816 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:00,838 autoreload 11710 139741461901440 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:04,057 autoreload 11710 139741461901440 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:04,576 autoreload 11733 140341899894912 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:06,319 autoreload 11733 140341899894912 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:06,828 autoreload 11746 140394581651584 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:10,138 autoreload 11746 140394581651584 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:10,627 autoreload 11769 139658920157312 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:12,311 autoreload 11769 139658920157312 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:12,802 autoreload 11795 140545219448960 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:17,456 autoreload 11795 140545219448960 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:17,948 autoreload 11827 140228151701632 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:21,219 autoreload 11827 140228151701632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:21,652 autoreload 11835 140134874202240 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:24,305 autoreload 11835 140134874202240 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:24,835 autoreload 11869 140622906450048 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:33,619 autoreload 11869 140622906450048 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:34,265 autoreload 11900 139804477640832 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:36,124 autoreload 11900 139804477640832 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:36,562 autoreload 12022 140204432826496 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:38,818 autoreload 12022 140204432826496 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:39,272 autoreload 12029 139803122610304 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:41,581 autoreload 12029 139803122610304 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:42,013 autoreload 12052 140252770631808 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:44,276 autoreload 12052 140252770631808 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:44,735 autoreload 12054 140036024316032 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:49,023 autoreload 12054 140036024316032 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:49,454 autoreload 12077 140286104289408 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:52,123 autoreload 12077 140286104289408 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:52,647 autoreload 12108 140120047644800 Watching for file changes with StatReloader
+INFO 2023-05-12 13:51:58,356 autoreload 12108 140120047644800 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:51:58,919 autoreload 12142 140597520715904 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:00,591 autoreload 12142 140597520715904 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:01,085 autoreload 12165 139787574460544 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:03,367 autoreload 12165 139787574460544 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:03,858 autoreload 12175 140051642908800 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:06,117 autoreload 12175 140051642908800 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:06,550 autoreload 12188 139836235452544 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:08,826 autoreload 12188 139836235452544 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:09,261 autoreload 12199 140113570799744 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:10,905 autoreload 12199 140113570799744 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:11,466 autoreload 12222 140575339311232 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:13,096 autoreload 12222 140575339311232 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:13,600 autoreload 12243 140697872707712 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:18,253 autoreload 12243 140697872707712 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:18,835 autoreload 12274 139996680835200 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:26,563 autoreload 12274 139996680835200 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:27,145 autoreload 12323 139759521648768 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:31,848 autoreload 12323 139759521648768 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:32,353 autoreload 12357 140233392332928 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:34,068 autoreload 12357 140233392332928 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:34,717 autoreload 12370 140282281250944 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:37,398 autoreload 12370 140282281250944 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:37,940 autoreload 12497 140571371966592 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:40,654 autoreload 12497 140571371966592 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:41,189 autoreload 12521 140400410849408 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:52,956 autoreload 12521 140400410849408 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:53,412 autoreload 12564 140350142333056 Watching for file changes with StatReloader
+INFO 2023-05-12 13:52:56,030 autoreload 12564 140350142333056 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:52:56,477 autoreload 12595 139819015725184 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:04,143 autoreload 12595 139819015725184 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:04,659 autoreload 12629 139648228630656 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:07,433 autoreload 12629 139648228630656 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:07,993 autoreload 12660 140051647475840 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:15,342 autoreload 12660 140051647475840 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:16,013 autoreload 12683 140195578704000 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:18,647 autoreload 12683 140195578704000 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:19,133 autoreload 12714 140452485423232 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:21,756 autoreload 12714 140452485423232 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:22,245 autoreload 12727 140696156074112 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:25,913 autoreload 12727 140696156074112 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:26,402 autoreload 12761 140341803995264 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:29,025 autoreload 12761 140341803995264 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:29,646 autoreload 12792 140668815847552 Watching for file changes with StatReloader
+INFO 2023-05-12 13:53:31,354 autoreload 12792 140668815847552 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 13:53:31,839 autoreload 12805 140570573025408 Watching for file changes with StatReloader
+INFO 2023-05-12 14:04:47,836 autoreload 14428 139732994392192 Watching for file changes with StatReloader
+INFO 2023-05-12 14:04:52,069 basehttp 14428 139732292359936 "GET /api/student/students/ HTTP/1.1" 200 2263
+WARNING 2023-05-12 14:06:24,894 log 14428 139732292359936 Unauthorized: /api/student/multi_delete/
+WARNING 2023-05-12 14:06:24,894 basehttp 14428 139732292359936 "POST /api/student/multi_delete/ HTTP/1.1" 401 43
+INFO 2023-05-12 14:06:32,432 basehttp 14428 139732292359936 "POST /api/student/multi_delete/ HTTP/1.1" 204 22
+INFO 2023-05-12 14:06:37,682 basehttp 14428 139732292359936 "GET /api/student/students/ HTTP/1.1" 200 1659
+WARNING 2023-05-12 14:06:51,830 log 14428 139732292359936 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:06:51,830 basehttp 14428 139732292359936 "POST /api/student/multi_delete/ HTTP/1.1" 404 81
+INFO 2023-05-12 14:07:17,358 basehttp 14428 139732292359936 "POST /api/student/multi_delete/ HTTP/1.1" 204 22
+INFO 2023-05-12 14:07:20,213 basehttp 14428 139732292359936 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 14:08:21,871 autoreload 14428 139732994392192 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:22,420 autoreload 14589 140231984251008 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:29,177 autoreload 14589 140231984251008 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:29,667 autoreload 14631 140455876501632 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:31,297 autoreload 14631 140455876501632 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:31,754 autoreload 14653 140067303780480 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:34,523 autoreload 14653 140067303780480 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:34,998 autoreload 14681 139838684147840 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:36,611 autoreload 14681 139838684147840 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:37,114 autoreload 14697 140076507746432 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:38,768 autoreload 14697 140076507746432 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:39,293 autoreload 14720 139926321959040 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:43,074 autoreload 14720 139926321959040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:43,558 autoreload 14742 140095695585408 Watching for file changes with StatReloader
+INFO 2023-05-12 14:08:45,820 autoreload 14742 140095695585408 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:08:46,255 autoreload 14762 140715659001984 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:05,155 autoreload 14762 140715659001984 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:05,631 autoreload 14796 139661064228992 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:07,304 autoreload 14796 139661064228992 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:07,805 autoreload 14822 139812194168960 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:13,473 autoreload 14822 139812194168960 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:13,950 autoreload 14861 140652019224704 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:15,584 autoreload 14861 140652019224704 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:16,041 autoreload 14874 139744570069120 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:27,792 autoreload 14874 139744570069120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:28,323 autoreload 15022 139850893725824 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:32,145 autoreload 15022 139850893725824 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:32,631 autoreload 15053 140610666594432 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:34,896 autoreload 15053 140610666594432 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:35,304 autoreload 15069 140469811507328 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:37,596 autoreload 15069 140469811507328 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:38,047 autoreload 15077 140174971125888 Watching for file changes with StatReloader
+INFO 2023-05-12 14:09:39,308 autoreload 15077 140174971125888 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:09:39,755 autoreload 15090 139961935097984 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:00,655 autoreload 15090 139961935097984 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:01,170 autoreload 15133 140145244745856 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:03,847 autoreload 15133 140145244745856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:04,280 autoreload 15164 140264094449792 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:06,895 autoreload 15164 140264094449792 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:07,406 autoreload 15177 140120039981184 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:11,182 autoreload 15177 140120039981184 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:11,609 autoreload 15211 140521834418304 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:13,246 autoreload 15211 140521834418304 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:13,719 autoreload 15242 140425753772160 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:18,382 autoreload 15242 140425753772160 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:18,878 autoreload 15276 140165057933440 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:21,519 autoreload 15276 140165057933440 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:21,993 autoreload 15289 140414011474048 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:38,492 autoreload 15289 140414011474048 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:38,904 autoreload 15429 140231398371456 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:42,575 autoreload 15429 140231398371456 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:43,048 autoreload 15460 139647608619136 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:44,715 autoreload 15460 139647608619136 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:45,177 autoreload 15473 139646079361152 Watching for file changes with StatReloader
+INFO 2023-05-12 14:10:46,793 autoreload 15473 139646079361152 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:10:47,252 autoreload 15504 139961300459648 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:01,042 autoreload 15504 139961300459648 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:01,483 autoreload 15538 139980368896128 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:03,091 autoreload 15538 139980368896128 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:03,548 autoreload 15561 139887008428160 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:05,182 autoreload 15561 139887008428160 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:05,696 autoreload 15579 140336936026240 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:07,306 autoreload 15579 140336936026240 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:07,744 autoreload 15592 140043765887104 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:09,401 autoreload 15592 140043765887104 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:09,901 autoreload 15626 139785357004928 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:12,533 autoreload 15626 139785357004928 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:13,056 autoreload 15650 139818024231040 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:24,841 autoreload 15650 139818024231040 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:25,316 autoreload 15693 140464375496832 Watching for file changes with StatReloader
+INFO 2023-05-12 14:11:27,011 autoreload 15693 140464375496832 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:11:27,490 autoreload 15719 140687665889408 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:11:38,430 log 15719 140686963857152 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:11:38,431 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 404 68
+WARNING 2023-05-12 14:11:41,633 log 15719 140686963857152 Bad Request: /api/student/multi_delete/
+WARNING 2023-05-12 14:11:41,634 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 400 52
+WARNING 2023-05-12 14:12:02,185 log 15719 140686963857152 Bad Request: /api/student/multi_delete/
+WARNING 2023-05-12 14:12:02,186 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 400 34
+WARNING 2023-05-12 14:12:14,799 log 15719 140686963857152 Bad Request: /api/student/multi_delete/
+WARNING 2023-05-12 14:12:14,799 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 400 34
+WARNING 2023-05-12 14:12:18,768 log 15719 140686963857152 Bad Request: /api/student/multi_delete/
+WARNING 2023-05-12 14:12:18,768 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 400 34
+WARNING 2023-05-12 14:12:20,789 log 15719 140686963857152 Bad Request: /api/student/multi_delete/
+WARNING 2023-05-12 14:12:20,790 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 400 28
+WARNING 2023-05-12 14:12:27,148 log 15719 140686963857152 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:12:27,148 basehttp 15719 140686963857152 "POST /api/student/multi_delete/ HTTP/1.1" 404 64
+INFO 2023-05-12 14:13:15,721 autoreload 15719 140687665889408 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:13:16,218 autoreload 15864 140077816504448 Watching for file changes with StatReloader
+INFO 2023-05-12 14:13:18,890 autoreload 15864 140077816504448 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:13:19,441 autoreload 15895 140061723820160 Watching for file changes with StatReloader
+INFO 2023-05-12 14:13:21,118 autoreload 15895 140061723820160 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:13:21,580 autoreload 15908 139939166470272 Watching for file changes with StatReloader
+INFO 2023-05-12 14:13:32,438 basehttp 15908 139938464429824 "POST /api/student/multi_create/ HTTP/1.1" 201 1207
+WARNING 2023-05-12 14:13:34,913 log 15908 139938464429824 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 14:13:34,914 basehttp 15908 139938464429824 "POST /api/student/multi_create/ HTTP/1.1" 400 559
+INFO 2023-05-12 14:14:15,751 basehttp 15908 139938464429824 "POST /api/student/multi_delete/ HTTP/1.1" 204 22
+INFO 2023-05-12 14:14:18,728 basehttp 15908 139938464429824 "GET /api/student/students/ HTTP/1.1" 200 1056
+WARNING 2023-05-12 14:14:54,458 log 15908 139938464429824 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:14:54,458 basehttp 15908 139938464429824 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 78
+WARNING 2023-05-12 14:15:46,621 log 15908 139938464429824 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:15:46,621 basehttp 15908 139938464429824 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+WARNING 2023-05-12 14:17:25,326 log 15908 139938464429824 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:17:25,326 basehttp 15908 139938464429824 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 14:19:14,677 autoreload 15908 139939166470272 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:19:15,209 autoreload 16063 140660213555328 Watching for file changes with StatReloader
+INFO 2023-05-12 14:19:17,512 autoreload 16063 140660213555328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:19:17,962 autoreload 16086 140327764230272 Watching for file changes with StatReloader
+INFO 2023-05-12 14:20:50,899 autoreload 16086 140327764230272 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:20:51,463 autoreload 16216 140411071770752 Watching for file changes with StatReloader
+INFO 2023-05-12 14:20:55,202 autoreload 16216 140411071770752 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:20:55,657 autoreload 16247 140390781939840 Watching for file changes with StatReloader
+INFO 2023-05-12 14:20:57,294 autoreload 16247 140390781939840 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:20:57,797 autoreload 16260 139952258228352 Watching for file changes with StatReloader
+INFO 2023-05-12 14:21:01,098 autoreload 16260 139952258228352 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:21:01,546 autoreload 16283 140604642889856 Watching for file changes with StatReloader
+INFO 2023-05-12 14:21:39,508 basehttp 16283 140603940853504 "POST /api/student/multi_create/ HTTP/1.1" 201 1207
+INFO 2023-05-12 14:21:44,387 basehttp 16283 140603940853504 "GET /api/student/students/ HTTP/1.1" 200 2263
+WARNING 2023-05-12 14:22:16,235 log 16283 140603940853504 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:22:16,236 basehttp 16283 140603940853504 "POST /api/student/multi_delete/ HTTP/1.1" 404 70
+WARNING 2023-05-12 14:22:29,951 log 16283 140603940853504 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:22:29,951 basehttp 16283 140603940853504 "POST /api/student/multi_delete/ HTTP/1.1" 404 70
+INFO 2023-05-12 14:22:50,802 autoreload 16283 140604642889856 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:22:51,438 autoreload 16435 139900278734976 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:22:55,365 log 16435 139899576706816 Not Found: /api/student/multi_delete/
+WARNING 2023-05-12 14:22:55,365 basehttp 16435 139899576706816 "POST /api/student/multi_delete/ HTTP/1.1" 404 70
+INFO 2023-05-12 14:23:06,407 basehttp 16435 139899576706816 "GET /api/student/students/ HTTP/1.1" 200 2263
+INFO 2023-05-12 14:23:21,536 autoreload 16435 139900278734976 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:23:22,006 autoreload 16491 140417406677120 Watching for file changes with StatReloader
+INFO 2023-05-12 14:23:23,625 autoreload 16491 140417406677120 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:23:24,092 autoreload 16517 140621801070720 Watching for file changes with StatReloader
+INFO 2023-05-12 14:23:26,782 autoreload 16517 140621801070720 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:23:27,359 autoreload 16535 140261996761216 Watching for file changes with StatReloader
+INFO 2023-05-12 14:23:31,399 basehttp 16535 140261294724864 "POST /api/student/multi_delete/ HTTP/1.1" 204 22
+INFO 2023-05-12 14:23:33,981 basehttp 16535 140261294724864 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 14:23:41,227 autoreload 16535 140261996761216 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:23:41,792 autoreload 16585 139829252919424 Watching for file changes with StatReloader
+INFO 2023-05-12 14:23:43,441 autoreload 16585 139829252919424 /opt/ldzxProject/student/views.py changed, reloading.
+INFO 2023-05-12 14:23:43,937 autoreload 16611 140280463007872 Watching for file changes with StatReloader
+INFO 2023-05-12 14:24:13,988 basehttp 16611 140279760951040 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 14:24:16,702 basehttp 16611 140279760951040 "GET /api/student/students/ HTTP/1.1" 200 1056
+INFO 2023-05-12 14:24:54,683 autoreload 16611 140280463007872 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:24:55,276 autoreload 16760 140288939622528 Watching for file changes with StatReloader
+INFO 2023-05-12 14:24:59,628 autoreload 16760 140288939622528 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:00,149 autoreload 16783 140415235231872 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:01,886 autoreload 16783 140415235231872 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:02,426 autoreload 16806 140611720675456 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:05,184 autoreload 16806 140611720675456 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:05,709 autoreload 16827 139631716896896 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:11,380 autoreload 16827 139631716896896 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:11,889 autoreload 16869 140020626792576 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:25:24,124 log 16869 140019924756224 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:25:24,125 basehttp 16869 140019924756224 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 14:25:33,956 autoreload 16869 140020626792576 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:34,408 autoreload 16931 140390879248512 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:35,620 autoreload 16931 140390879248512 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:36,036 autoreload 16944 140397497507968 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:40,258 autoreload 16944 140397497507968 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:40,730 autoreload 16955 139766373073024 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:44,401 autoreload 16955 139766373073024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:44,849 autoreload 16989 140569804431488 Watching for file changes with StatReloader
+INFO 2023-05-12 14:25:47,127 autoreload 16989 140569804431488 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:25:47,608 autoreload 17009 140422839627904 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:25:48,550 log 17009 140422138377984 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:25:48,550 basehttp 17009 140422138377984 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 14:29:58,621 autoreload 17009 140422839627904 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:29:59,214 autoreload 17140 140352728621184 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:30:01,753 log 17140 140352026593024 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:30:01,754 basehttp 17140 140352026593024 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 14:30:52,796 autoreload 17140 140352728621184 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:30:53,310 autoreload 17193 140529130406016 Watching for file changes with StatReloader
+INFO 2023-05-12 14:30:56,091 autoreload 17193 140529130406016 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:30:56,605 autoreload 17224 140624262791296 Watching for file changes with StatReloader
+INFO 2023-05-12 14:31:19,505 autoreload 17224 140624262791296 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:31:19,938 autoreload 17354 140644201840768 Watching for file changes with StatReloader
+INFO 2023-05-12 14:31:21,559 autoreload 17354 140644201840768 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:31:22,101 autoreload 17380 140109048508544 Watching for file changes with StatReloader
+INFO 2023-05-12 14:31:24,817 autoreload 17380 140109048508544 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:31:25,440 autoreload 17398 139975669960832 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:31:28,104 log 17398 139974967924480 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 14:31:28,104 basehttp 17398 139974967924480 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 14:32:30,999 autoreload 17398 139975669960832 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 14:32:31,621 autoreload 17547 139887550443648 Watching for file changes with StatReloader

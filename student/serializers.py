@@ -11,12 +11,24 @@ class StudentModelSerializer(serializers.ModelSerializer):
         fields = '__all__'
     
     def validate_id(self,value):
+        # 如果是在PUT和PATCH下，则不需要验证身份证号是否存在，但不允许修改身份证号
+        if self.context['request'].method in ['PUT','PATCH']:
+            obj_id = self.context['request'].path.split('/')[-2]
+            try:
+                StudentModel.objects.get(id=obj_id)
+            except:
+                raise serializers.ValidationError("该身份证号下的学生不存在")
+            if obj_id == value:
+                return value
+            else:
+                raise serializers.ValidationError("身份证号不可修改")
+
         try:
             StudentModel.objects.get(id=value)
         except:
             # if not funcs.validate_id_number(value):
             #     raise serializers.ValidationError(f"身份证{value}信息有误，请检查后重新填写")
-            return value 
+            return value
 
         raise serializers.ValidationError(f"身份证[{value}]已存在")
     
@@ -26,6 +38,15 @@ class StudentModelSerializer(serializers.ModelSerializer):
         return value
 
     def validate_student_id(self,value):
+        if self.context['request'].method in ['PUT','PATCH']:
+            obj_id = self.context['request'].path.split('/')[-2]
+            try:
+                stu = StudentModel.objects.get(id=obj_id)
+            except:
+                raise serializers.ValidationError("该身份证号下的学生不存在")
+            if value == stu.student_id:
+                return value
+            
         try:
             StudentModel.objects.get(student_id=value)
         except:
@@ -34,8 +55,6 @@ class StudentModelSerializer(serializers.ModelSerializer):
             return value
         raise serializers.ValidationError(f"学号[{value}]已存在")
     
-    def update(self, instance, validated_data):
-        return super().update(instance, validated_data)
     
     
     

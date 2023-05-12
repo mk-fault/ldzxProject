@@ -3815,3 +3815,229 @@ WARNING 2023-05-12 14:31:28,104 log 17398 139974967924480 Bad Request: /api/stud
 WARNING 2023-05-12 14:31:28,104 basehttp 17398 139974967924480 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
 INFO 2023-05-12 14:32:30,999 autoreload 17398 139975669960832 /opt/ldzxProject/student/serializers.py changed, reloading.
 INFO 2023-05-12 14:32:31,621 autoreload 17547 139887550443648 Watching for file changes with StatReloader
+INFO 2023-05-12 14:54:36,087 autoreload 21880 139953475661952 Watching for file changes with StatReloader
+WARNING 2023-05-12 14:57:33,320 log 21880 139952773629696 Bad Request: /api/student/multi_create/
+WARNING 2023-05-12 14:57:33,323 basehttp 21880 139952773629696 "POST /api/student/multi_create/ HTTP/1.1" 400 559
+WARNING 2023-05-12 15:00:40,116 log 21880 139952773629696 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:00:40,116 basehttp 21880 139952773629696 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 92
+INFO 2023-05-12 15:01:09,680 autoreload 21880 139953475661952 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:10,366 autoreload 22046 139639428915328 Watching for file changes with StatReloader
+INFO 2023-05-12 15:01:12,574 autoreload 22046 139639428915328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:13,074 autoreload 22069 139916993732736 Watching for file changes with StatReloader
+INFO 2023-05-12 15:01:15,353 autoreload 22069 139916993732736 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:15,822 autoreload 22071 140362209775744 Watching for file changes with StatReloader
+INFO 2023-05-12 15:01:18,110 autoreload 22071 140362209775744 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:18,604 autoreload 22094 140115280670848 Watching for file changes with StatReloader
+INFO 2023-05-12 15:01:21,951 autoreload 22094 140115280670848 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:22,384 autoreload 22110 140619175542912 Watching for file changes with StatReloader
+INFO 2023-05-12 15:01:26,672 autoreload 22110 140619175542912 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:01:27,069 autoreload 22132 140131929215104 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:00,698 autoreload 22132 140131929215104 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:01,153 autoreload 22161 139756480843904 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:02:02,797 log 22161 139755779598080 Method Not Allowed: /api/student/students/
+WARNING 2023-05-12 15:02:02,798 basehttp 22161 139755779598080 "PUT /api/student/students/ HTTP/1.1" 405 45
+INFO 2023-05-12 15:02:10,937 autoreload 22161 139756480843904 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:11,465 autoreload 22307 140664189444224 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:14,722 autoreload 22307 140664189444224 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:15,249 autoreload 22330 140166778921088 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:19,551 autoreload 22330 140166778921088 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:20,024 autoreload 22353 140415321899136 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:22,718 autoreload 22353 140415321899136 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:23,240 autoreload 22380 139848443506816 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:27,603 autoreload 22380 139848443506816 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:28,003 autoreload 22402 139825907523712 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:31,635 autoreload 22402 139825907523712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:32,248 autoreload 22421 140063636709504 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:33,918 autoreload 22421 140063636709504 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:34,420 autoreload 22455 140079486800000 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:38,715 autoreload 22455 140079486800000 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:39,144 autoreload 22478 140344826519680 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:44,898 autoreload 22478 140344826519680 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:45,328 autoreload 22512 139980048707712 Watching for file changes with StatReloader
+INFO 2023-05-12 15:02:50,610 autoreload 22512 139980048707712 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:02:51,029 autoreload 22535 140106850730112 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:03:01,294 log 22535 140106148697856 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:03:01,294 basehttp 22535 140106148697856 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+INFO 2023-05-12 15:03:11,976 autoreload 22535 140106850730112 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:12,519 autoreload 22684 140102983266432 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:33,416 autoreload 22684 140102983266432 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:33,934 autoreload 22733 140672794349696 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:36,624 autoreload 22733 140672794349696 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:37,108 autoreload 22764 139689636974720 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:39,773 autoreload 22764 139689636974720 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:40,329 autoreload 22781 140320442863744 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:44,092 autoreload 22781 140320442863744 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:44,640 autoreload 22808 140475614769280 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:46,330 autoreload 22808 140475614769280 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:46,846 autoreload 22839 139776352247936 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:54,573 autoreload 22839 139776352247936 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:55,006 autoreload 22873 140103748358272 Watching for file changes with StatReloader
+INFO 2023-05-12 15:03:57,245 autoreload 22873 140103748358272 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:03:57,672 autoreload 22896 140663933210752 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:09,463 autoreload 22896 140663933210752 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:09,939 autoreload 22930 140292927426688 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:12,588 autoreload 22930 140292927426688 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:13,090 autoreload 23057 139620808724608 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:15,399 autoreload 23057 139620808724608 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:15,891 autoreload 23059 139816534855808 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:18,243 autoreload 23059 139816534855808 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:18,716 autoreload 23082 139838096896128 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:20,410 autoreload 23082 139838096896128 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:20,983 autoreload 23095 139810044645504 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:28,787 autoreload 23095 139810044645504 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:29,291 autoreload 23150 140403062055040 Watching for file changes with StatReloader
+INFO 2023-05-12 15:04:56,372 autoreload 23150 140403062055040 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:04:56,848 autoreload 23181 140184820310144 Watching for file changes with StatReloader
+INFO 2023-05-12 15:05:55,026 basehttp 23181 140184118273792 "GET /api/student/students/ HTTP/1.1" 200 2263
+WARNING 2023-05-12 15:06:06,974 log 23181 140184118273792 Bad Request: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:06:06,974 basehttp 23181 140184118273792 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 400 44
+INFO 2023-05-12 15:06:11,408 basehttp 23181 140184118273792 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:06:13,855 basehttp 23181 140184118273792 "GET /api/student/students/ HTTP/1.1" 200 2263
+WARNING 2023-05-12 15:06:28,782 log 23181 140184118273792 Unauthorized: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:06:28,783 basehttp 23181 140184118273792 "DELETE /api/student/students/513323197501303525/ HTTP/1.1" 401 43
+INFO 2023-05-12 15:06:32,509 basehttp 23181 140184118273792 "DELETE /api/student/students/513323197501303525/ HTTP/1.1" 204 0
+INFO 2023-05-12 15:06:35,101 basehttp 23181 140184118273792 "GET /api/student/students/ HTTP/1.1" 200 2062
+INFO 2023-05-12 15:06:43,087 autoreload 23181 140184820310144 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:43,677 autoreload 23333 139935081996416 Watching for file changes with StatReloader
+INFO 2023-05-12 15:06:47,346 autoreload 23333 139935081996416 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:47,832 autoreload 23364 139916607082624 Watching for file changes with StatReloader
+INFO 2023-05-12 15:06:50,091 autoreload 23364 139916607082624 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:50,532 autoreload 23377 140288880009344 Watching for file changes with StatReloader
+INFO 2023-05-12 15:06:53,807 autoreload 23377 140288880009344 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:54,301 autoreload 23388 140509031452800 Watching for file changes with StatReloader
+INFO 2023-05-12 15:06:57,606 autoreload 23388 140509031452800 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:58,116 autoreload 23411 139813707198592 Watching for file changes with StatReloader
+INFO 2023-05-12 15:06:59,393 autoreload 23411 139813707198592 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:06:59,905 autoreload 23413 139713490325632 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:01,125 autoreload 23413 139713490325632 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:01,528 autoreload 23433 139866931286144 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:03,794 autoreload 23433 139866931286144 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:04,283 autoreload 23438 140391092699264 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:05,467 autoreload 23438 140391092699264 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:05,880 autoreload 23451 140332726034560 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:11,180 autoreload 23451 140332726034560 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:11,615 autoreload 23480 139950174556288 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:13,896 autoreload 23480 139950174556288 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:14,389 autoreload 23485 140157153333376 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:17,676 autoreload 23485 140157153333376 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:18,167 autoreload 23506 139996481310848 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:19,843 autoreload 23506 139996481310848 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:20,407 autoreload 23531 139636695556224 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:22,065 autoreload 23531 139636695556224 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:22,575 autoreload 23549 140608301363328 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:31,287 autoreload 23549 140608301363328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:31,743 autoreload 23583 140122232946816 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:35,382 autoreload 23583 140122232946816 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:35,813 autoreload 23614 140244511797376 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:39,435 autoreload 23614 140244511797376 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:40,128 autoreload 23648 140587227627648 Watching for file changes with StatReloader
+INFO 2023-05-12 15:07:43,093 autoreload 23648 140587227627648 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:07:43,603 autoreload 23771 140430735540352 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:07:49,806 log 23771 140430033495808 Not Found: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:07:49,806 basehttp 23771 140430033495808 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 404 25
+INFO 2023-05-12 15:08:22,129 autoreload 23879 140605553586304 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:08:25,577 log 23879 140604466611968 Not Found: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:08:25,581 basehttp 23879 140604466611968 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 404 25
+WARNING 2023-05-12 15:08:41,352 log 23879 140604466611968 Not Found: /api/student/students/513323197501303526/
+WARNING 2023-05-12 15:08:41,354 basehttp 23879 140604466611968 "PUT /api/student/students/513323197501303526/ HTTP/1.1" 404 25
+WARNING 2023-05-12 15:08:53,407 log 23879 140604466611968 Not Found: /api/student/students/513323197501303527/
+WARNING 2023-05-12 15:08:53,407 basehttp 23879 140604466611968 "PUT /api/student/students/513323197501303527/ HTTP/1.1" 404 25
+WARNING 2023-05-12 15:09:00,807 log 23879 140604466611968 Bad Request: /api/student/students/513323197501303517/
+WARNING 2023-05-12 15:09:00,808 basehttp 23879 140604466611968 "PUT /api/student/students/513323197501303517/ HTTP/1.1" 400 47
+INFO 2023-05-12 15:09:18,332 autoreload 24139 140431790669952 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:09:20,402 log 24139 140431088641792 Bad Request: /api/student/students/513323197501303517/
+WARNING 2023-05-12 15:09:20,402 basehttp 24139 140431088641792 "PUT /api/student/students/513323197501303517/ HTTP/1.1" 400 47
+INFO 2023-05-12 15:09:33,132 basehttp 24139 140431088641792 "GET /api/student/students/ HTTP/1.1" 200 2062
+WARNING 2023-05-12 15:09:46,213 log 24139 140431088641792 Bad Request: /api/student/students/513323197501303517/
+WARNING 2023-05-12 15:09:46,213 basehttp 24139 140431088641792 "PUT /api/student/students/513323197501303517/ HTTP/1.1" 400 47
+INFO 2023-05-12 15:11:30,855 autoreload 24139 140431790669952 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:31,282 autoreload 24293 140456534364288 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:36,607 autoreload 24293 140456534364288 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:37,067 autoreload 24316 140545634484352 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:39,332 autoreload 24316 140545634484352 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:39,808 autoreload 24339 139950570745984 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:48,637 autoreload 24339 139950570745984 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:49,128 autoreload 24373 140247988899968 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:50,324 autoreload 24373 140247988899968 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:50,902 autoreload 24386 140123694436480 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:54,166 autoreload 24386 140123694436480 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:54,582 autoreload 24397 139825508413568 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:55,830 autoreload 24397 139825508413568 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:56,261 autoreload 24410 140435660906624 Watching for file changes with StatReloader
+INFO 2023-05-12 15:11:59,519 autoreload 24410 140435660906624 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:11:59,958 autoreload 24421 140101811097728 Watching for file changes with StatReloader
+INFO 2023-05-12 15:12:13,732 autoreload 24421 140101811097728 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:12:14,246 autoreload 24470 140522814546048 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:12:21,385 log 24470 140522112509696 Bad Request: /api/student/students/513323197501303517/
+WARNING 2023-05-12 15:12:21,386 basehttp 24470 140522112509696 "PUT /api/student/students/513323197501303517/ HTTP/1.1" 400 35
+WARNING 2023-05-12 15:12:35,193 log 24470 140522112509696 Not Found: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:12:35,194 basehttp 24470 140522112509696 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 404 25
+WARNING 2023-05-12 15:12:54,857 log 24470 140522112509696 Not Found: /api/student/students/513323197501303525/
+WARNING 2023-05-12 15:12:54,858 basehttp 24470 140522112509696 "PUT /api/student/students/513323197501303525/ HTTP/1.1" 404 25
+INFO 2023-05-12 15:13:23,852 autoreload 24470 140522814546048 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:24,349 autoreload 24625 140048508166272 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:27,995 autoreload 24625 140048508166272 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:28,482 autoreload 24656 139854421971072 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:30,132 autoreload 24656 139854421971072 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:30,727 autoreload 24669 140025089228928 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:36,513 autoreload 24669 140025089228928 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:36,972 autoreload 24721 140589031231616 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:45,696 autoreload 24721 140589031231616 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:46,166 autoreload 24755 140365516705920 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:54,857 autoreload 24755 140365516705920 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:55,309 autoreload 24804 139989207859328 Watching for file changes with StatReloader
+INFO 2023-05-12 15:13:56,986 autoreload 24804 139989207859328 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:13:57,511 autoreload 24817 140707570167936 Watching for file changes with StatReloader
+INFO 2023-05-12 15:14:43,729 autoreload 24817 140707570167936 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:14:44,222 autoreload 24965 139779839406208 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:00,058 autoreload 24965 139779839406208 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:00,531 autoreload 25014 139626360008832 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:03,334 autoreload 25014 139626360008832 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:03,817 autoreload 25045 139770496651392 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:06,458 autoreload 25045 139770496651392 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:06,974 autoreload 25069 140599410466944 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:09,241 autoreload 25069 140599410466944 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:09,690 autoreload 25080 140641636737152 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:15,993 autoreload 25080 140641636737152 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:16,555 autoreload 25103 139908339572864 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:19,292 autoreload 25103 139908339572864 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:19,780 autoreload 25134 140692527005824 Watching for file changes with StatReloader
+INFO 2023-05-12 15:15:36,686 autoreload 25134 140692527005824 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:15:37,442 autoreload 25168 140109419217024 Watching for file changes with StatReloader
+INFO 2023-05-12 15:16:09,183 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:16:11,600 basehttp 25168 140108717160192 "GET /api/student/students/ HTTP/1.1" 200 2062
+WARNING 2023-05-12 15:16:24,413 log 25168 140108717160192 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:16:24,413 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+WARNING 2023-05-12 15:16:32,709 log 25168 140108717160192 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:16:32,710 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+WARNING 2023-05-12 15:16:38,218 log 25168 140108717160192 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:16:38,218 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+INFO 2023-05-12 15:16:40,377 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:16:43,137 basehttp 25168 140108717160192 "GET /api/student/students/ HTTP/1.1" 200 2062
+WARNING 2023-05-12 15:17:03,570 log 25168 140108717160192 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:17:03,570 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 400 35
+INFO 2023-05-12 15:17:13,665 basehttp 25168 140108717160192 "PUT /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:17:16,149 basehttp 25168 140108717160192 "GET /api/student/students/ HTTP/1.1" 200 2062
+INFO 2023-05-12 15:17:25,561 basehttp 25168 140108717160192 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:17:42,341 basehttp 25168 140108717160192 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+INFO 2023-05-12 15:17:45,700 basehttp 25168 140108717160192 "GET /api/student/students/ HTTP/1.1" 200 2062
+WARNING 2023-05-12 15:17:59,979 log 25168 140108717160192 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:17:59,979 basehttp 25168 140108717160192 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 400 35
+INFO 2023-05-12 15:18:12,110 basehttp 25168 140108717160192 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+WARNING 2023-05-12 15:18:29,277 log 25168 140108717160192 Bad Request: /api/student/students/
+WARNING 2023-05-12 15:18:29,277 basehttp 25168 140108717160192 "POST /api/student/students/ HTTP/1.1" 400 49
+INFO 2023-05-12 15:18:42,236 basehttp 25168 140108717160192 "POST /api/student/students/ HTTP/1.1" 201 200
+INFO 2023-05-12 15:18:45,998 basehttp 25168 140108717160192 "GET /api/student/students/ HTTP/1.1" 200 2263
+INFO 2023-05-12 15:19:29,551 autoreload 25168 140109419217024 /opt/ldzxProject/student/serializers.py changed, reloading.
+INFO 2023-05-12 15:19:30,059 autoreload 25320 139712199340160 Watching for file changes with StatReloader
+WARNING 2023-05-12 15:19:39,753 log 25320 139711497299712 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:19:39,753 basehttp 25320 139711497299712 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+INFO 2023-05-12 15:19:43,944 basehttp 25320 139711497299712 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+WARNING 2023-05-12 15:19:48,017 log 25320 139711497299712 Bad Request: /api/student/students/513323197501303519/
+WARNING 2023-05-12 15:19:48,018 basehttp 25320 139711497299712 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 400 44
+INFO 2023-05-12 15:19:50,622 basehttp 25320 139711497299712 "PATCH /api/student/students/513323197501303519/ HTTP/1.1" 200 200
+WARNING 2023-05-12 15:20:01,610 log 25320 139711497299712 Bad Request: /api/student/students/513323197501303523/
+WARNING 2023-05-12 15:20:01,610 basehttp 25320 139711497299712 "PUT /api/student/students/513323197501303523/ HTTP/1.1" 400 78
+WARNING 2023-05-12 15:20:09,327 log 25320 139711497299712 Not Found: /api/student/students/513323197501303529/
+WARNING 2023-05-12 15:20:09,328 basehttp 25320 139711497299712 "PUT /api/student/students/513323197501303529/ HTTP/1.1" 404 25
+INFO 2023-05-12 15:20:32,531 basehttp 25320 139711497299712 "GET /api/student/students/ HTTP/1.1" 200 2263

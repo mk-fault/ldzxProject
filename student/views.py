@@ -106,3 +106,4 @@ class StudentMultiDeleteView(APIView):
         
         else:
             return Response({'msg':'删除类型错误'},status=status.HTTP_400_BAD_REQUEST)
+

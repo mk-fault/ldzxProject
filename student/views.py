@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.core.files.storage import default_storage
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -9,10 +10,11 @@ from rest_framework.permissions import IsAdminUser,AllowAny,IsAuthenticated
 from rest_framework import mixins
 
 from .models import StudentModel
-from .serializers import StudentModelSerializer
+from .serializers import StudentModelSerializer,StudentMultiCreateSerializer
 from .filters import StudentFilter
 
 import pandas as pd
+import time
 # Create your views here.
 
 # 管理学生信息视图
@@ -56,9 +58,10 @@ class StudentMultiCreateView(APIView):
             # StudentModel.objects.update_or_create(id=data['身份证号'],name=data['姓名'],sex=data['性别'],student_id=data['学号'],admission_date=data['入学时间'])
         
         # 反序列化
-        ser = StudentModelSerializer(data=data_list,many=True)
+        ser = StudentMultiCreateSerializer(data=data_list,many=True)
         if ser.is_valid():
             ser.save()
+            default_storage.save(f'{time.time()}.xlsx',obj)
             return Response(ser.data,status=status.HTTP_201_CREATED)
         else:
             return Response(ser.errors,status=status.HTTP_400_BAD_REQUEST)

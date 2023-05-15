@@ -51,9 +51,14 @@ class StudentModelSerializer(serializers.ModelSerializer):
             StudentModel.objects.get(student_id=value)
         except:
             if not value.isdigit():
-                raise serializers.ValidationError(f"学号[{value}]格式有误，请检查后重新填写")
+                raise serializers.ValidationError(f"考号[{value}]格式有误，请检查后重新填写")
             return value
-        raise serializers.ValidationError(f"学号[{value}]已存在")
+        raise serializers.ValidationError(f"考号[{value}]已存在")
+
+    def validate_class_num(self,value):
+        if value < 1 or value > 99:
+            raise serializers.ValidationError("请输入正确的班级(1~99)")
+        return value
     
 class StudentMultiCreateSerializer(serializers.ModelSerializer):
     id = serializers.CharField(max_length=18)
@@ -82,9 +87,14 @@ class StudentMultiCreateSerializer(serializers.ModelSerializer):
             StudentModel.objects.get(student_id=value)
         except:
             if not value.isdigit():
-                raise serializers.ValidationError(f"学号[{value}]格式有误，请检查后重新填写")
+                raise serializers.ValidationError(f"考号[{value}]格式有误，请检查后重新填写")
             return value
-        raise serializers.ValidationError(f"学号[{value}]已存在")
+        raise serializers.ValidationError(f"考号[{value}]已存在")
+    
+    def validate_class_num(self,value):
+        if value < 1 or value > 99:
+            raise serializers.ValidationError("请输入正确的班级(1~99)")
+        return value
     
     
     

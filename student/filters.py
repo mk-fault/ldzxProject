@@ -9,4 +9,4 @@ class StudentFilter(filters.FilterSet):
 
     class Meta:
         model = StudentModel
-        fields = ['sex','admission_date','max_admission_date','min_admission_date','max_student_id','min_student_id',"student_id","id"]
+        fields = ['sex','admission_date','max_admission_date','min_admission_date','max_student_id','min_student_id',"student_id","id","class_num"]

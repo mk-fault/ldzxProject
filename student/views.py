@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAdminUser,AllowAny,IsAuthenticated
 from rest_framework import mixins
 
 from .models import StudentModel
-from .serializers import StudentModelSerializer,StudentMultiCreateSerializer
+from .serializers import StudentModelSerializer,StudentMultiCreateSerializer,StudentInfoSerializer
 from .filters import StudentFilter
 
 import pandas as pd
@@ -119,23 +119,47 @@ class StudentMultiDeleteView(APIView):
             return Response({'msg':'删除类型错误'},status=status.HTTP_400_BAD_REQUEST)
 
 # 单个学生查询视图
-class StudentDetailView(generics.RetrieveAPIView):
+class StudentInfoView(generics.GenericAPIView):
     queryset = StudentModel.objects.all()
-    serializer_class = StudentModelSerializer
+    serializer_class = StudentInfoSerializer
     permission_classes = [AllowAny]
+
+    def post(self,request):
+        data = request.data
+        id = data.get('id',None)
+        student_id = data.get('student_id',None)
+        if not id or not student_id:
+            return Response({'msg':'请传入学生id和学号'},status=status.HTTP_400_BAD_REQUEST)
+        else:
+            try:
+                student = StudentModel.objects.get(id=id,student_id=student_id)
+            except:
+                return Response({'msg':'未查询到该考生信息'},status=status.HTTP_404_NOT_FOUND)
+            ser = self.get_serializer(student)
+            return Response(ser.data,status=status.HTTP_200_OK)
+
+            
 
 # 录取通知书下载视图
 class OfferDownloadView(APIView):
     def post(self,request):
         data = request.data
         id = data.get('id',None)
-        if id:
+        student_id = data.get('student_id',None)
+        name = data.get('name',None)
+        class_num = data.get('class_num',None)
+        admission_date = data.get('admission_date',None)
+        sex = data.get('sex',None)
+        if not id or not student_id or not name or not class_num or not admission_date or not sex:
+            return Response({'msg':'请传入完整参数'},status=status.HTTP_400_BAD_REQUEST)
+        else:
             pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
             pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
+            
             try:
-                student = StudentModel.objects.get(id=id)
+                student = StudentModel.objects.get(**data)
             except:
-                return Response({'msg':'学生不存在'},status=status.HTTP_404_NOT_FOUND)
+                return Response({'msg':'未查询到该考生信息'},status=status.HTTP_404_NOT_FOUND)
             student_data = {
                 'name': student.name,
                 'class_num': student.class_num,
@@ -177,6 +201,10 @@ class OfferDownloadView(APIView):
             # 保存PDF文件
             pdf_canvas.save()
 
+            # 增加下载次数
+            student.access_count += 1
+            student.save()
+
             return response
-        return Response({'msg':'请传入学生id'},status=status.HTTP_400_BAD_REQUEST)
+        
     

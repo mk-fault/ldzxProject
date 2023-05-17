@@ -96,6 +96,13 @@ class StudentMultiCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("请输入正确的班级(1~99)")
         return value
     
+
+class StudentInfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = StudentModel
+        exclude = ['create_time','update_time','access_count']
+        read_only_fields = ['sex','name','admission_date','class_num']
+        
     
     
     

@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'coreapi',
     'teacher',
     'student',
-    'offer'
+    'offer',
 ]
 
 MIDDLEWARE = [

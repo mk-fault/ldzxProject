@@ -162,3 +162,7 @@ cython_debug/
 # log
 logs/
 media/
+ldzxProject/__pycache__/
+offer/__pycache__/
+student/__pycache__/
+teacher/__pycache__/

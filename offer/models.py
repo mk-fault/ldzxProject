@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.signals import pre_delete
+from django.dispatch import receiver
 
 # Create your models here.
 class OfferModel(models.Model):
@@ -10,3 +12,13 @@ class OfferModel(models.Model):
         db_table = 'offer'
         verbose_name = '录取通知书'
         verbose_name_plural = verbose_name
+
+# 信号处理函数
+@receiver(pre_delete, sender=OfferModel)
+def delete_related_image(sender, instance, **kwargs):
+    # 获取图片字段的值
+    image = instance.background_pic
+
+    # 检查字段值是否存在，并删除本地存储文件
+    if image:
+        image.delete(save=False)

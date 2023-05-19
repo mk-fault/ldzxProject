@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
+from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/teacher/',include('teacher.urls')),
     path('api/student/',include('student.urls')),
     path('api/offer/',include('offer.urls')),
+    path('api/docs/',include_docs_urls(title='录取通知书API文档')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -13,5 +13,4 @@ urlpatterns = [
     path('multi_create/',views.StudentMultiCreateView.as_view(),name='multi_create'),
     path('multi_delete/',views.StudentMultiDeleteView.as_view(),name='multi_delete'),
     path('studentinfo/',views.StudentInfoView.as_view(),name='detail'),
-    path('download/',views.OfferDownloadView.as_view(),name='download'),
 ]

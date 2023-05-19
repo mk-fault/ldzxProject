@@ -69,7 +69,7 @@ class StudentMultiCreateView(APIView):
         ser = StudentMultiCreateSerializer(data=data_list,many=True)
         if ser.is_valid():
             ser.save()
-            default_storage.save(f'{datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")}.xlsx',obj)
+            default_storage.save(f'student/multicreate/{datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")}.xlsx',obj)
             return Response(ser.data,status=status.HTTP_201_CREATED)
         else:
             return Response(ser.errors,status=status.HTTP_400_BAD_REQUEST)
@@ -139,72 +139,5 @@ class StudentInfoView(generics.GenericAPIView):
             return Response(ser.data,status=status.HTTP_200_OK)
 
             
-
-# 录取通知书下载视图
-class OfferDownloadView(APIView):
-    def post(self,request):
-        data = request.data
-        id = data.get('id',None)
-        student_id = data.get('student_id',None)
-        name = data.get('name',None)
-        class_num = data.get('class_num',None)
-        admission_date = data.get('admission_date',None)
-        sex = data.get('sex',None)
-        if not id or not student_id or not name or not class_num or not admission_date or not sex:
-            return Response({'msg':'请传入完整参数'},status=status.HTTP_400_BAD_REQUEST)
-        else:
-            pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
-            pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
-            
-            try:
-                student = StudentModel.objects.get(**data)
-            except:
-                return Response({'msg':'未查询到该考生信息'},status=status.HTTP_404_NOT_FOUND)
-            student_data = {
-                'name': student.name,
-                'class_num': student.class_num,
-                "admission_date": student.admission_date
-            }
-            background_image_path = os.path.join(settings.MEDIA_ROOT,'ts.jpg')
-            icon_image_path = os.path.join(settings.MEDIA_ROOT,'21.jpg')
-
-            # 创建PDF画布
-            response = HttpResponse(content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="admission_letter.pdf"'
-            pdf_canvas = canvas.Canvas(response)
-            
-
-            # 绘制背景图片
-            pdf_canvas.drawImage(background_image_path, 0, 0, width=pdf_canvas._pagesize[0], height=pdf_canvas._pagesize[1])
-
-            # 绘制图标
-            pdf_canvas.drawInlineImage(icon_image_path, 200, 600, width=200, height=200)
-
-            # 标题
-            pdf_canvas.setFont('KAITI', 40)
-            pdf_canvas.setFillColorRGB(255, 0, 0)
-            pdf_canvas.drawString(200, 550, f'录取通知书')
-
-            # 添加学生信息
-            pdf_canvas.setFont('SIMSUN', 20)
-            pdf_canvas.setFillColorRGB(0, 0, 0)
-            pdf_canvas.drawString(80, 500, f'{student_data["name"]} 同学:')
-            pdf_canvas.drawString(80, 450, f'恭喜你被我校录取，成为我校 {student_data["admission_date"]} 级的一员，你的')
-            pdf_canvas.drawString(40, 400, f'录取班级为 {student_data["class_num"]} 班。请持此通知书于 {student_data["admission_date"]} 年 9 月 1 日前')
-            pdf_canvas.drawString(40, 350, f'来我校报到。')
-
-            # 落款
-            pdf_canvas.drawString(400, 100, f'四川省泸定中学')
-            pdf_canvas.drawString(200, 50, f'校长：                     2023 年 7 月 1 日')
-
-
-            # 保存PDF文件
-            pdf_canvas.save()
-
-            # 增加下载次数
-            student.access_count += 1
-            student.save()
-
-            return response
         
     

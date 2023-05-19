@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django_filters',
     'coreapi',
     'teacher',
-    'student'
+    'student',
+    'offer'
 ]
 
 MIDDLEWARE = [

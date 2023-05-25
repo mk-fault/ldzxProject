@@ -38,6 +38,7 @@ class OfferDownloadView(APIView):
         super().__init__(**kwargs)
         self.offer = None
 
+    @classmethod
     def get_offer(cls):
         """
         获取启用的录取通知书
@@ -61,8 +62,11 @@ class OfferDownloadView(APIView):
         drawing.scale(scaling_x, scaling_y)
         return drawing
     
-    # 将字符串中的变量替换为字典中的值
+    
     def replace_str(self,ori_str, data):
+        """
+        替换字符串中的变量
+        """
     # 获取字符串中的变量
         var_list = re.findall(r'{(.*?)}', ori_str)
         # 将变量替换为字典中的值

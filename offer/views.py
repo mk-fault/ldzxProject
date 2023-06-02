@@ -121,12 +121,9 @@ class OfferDownloadView(APIView):
         id = data.get('id',None)
         student_id = data.get('student_id',None)
         name = data.get('name',None)
-        class_num = data.get('class_num',None)
-        admission_date = data.get('admission_date',None)
-        sex = data.get('sex',None)
 
         # 判断参数是否完整
-        if not id or not student_id or not name or not class_num or not admission_date or not sex:
+        if not id or not student_id or not name:
             return Response({'msg':'请传入完整参数'},status=status.HTTP_400_BAD_REQUEST)
         
         else:
@@ -193,7 +190,7 @@ class OfferDownloadView(APIView):
             # 加入空行
             story.append(Spacer(1, 300))
 
-            name_para = Paragraph(f'{data["name"]}同学：',nt)
+            name_para = Paragraph(f'{name}同学：',nt)
             paragraph = Paragraph(ori_str, st)
             story.append(name_para)
             story.append(paragraph)

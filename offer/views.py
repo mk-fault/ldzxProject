@@ -28,6 +28,8 @@ from svglib.svglib import svg2rlg
 import os
 import copy
 import re
+import pdf2image
+import tempfile
 
 # Create your views here.
 # 录取通知书下载视图
@@ -241,3 +243,177 @@ class OfferViewset(viewsets.ModelViewSet):
                     q.is_using = False
                     q.save()
         return super().perform_update(serializer)
+    
+class OfferPreviewView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def __init__(self, **kwargs: Any) -> None:
+        super().__init__(**kwargs)
+        self.offer = None
+  
+    def scale(self,drawing, scaling_factor):
+        """
+        对矢量图进行缩放
+        """
+        scaling_x = scaling_factor
+        scaling_y = scaling_factor
+
+        drawing.width = drawing.minWidth() * scaling_x
+        drawing.height = drawing.height * scaling_y
+        drawing.scale(scaling_x, scaling_y)
+        return drawing
+    
+    
+    def replace_str(self,ori_str, data):
+        """
+        替换字符串中的变量
+        """
+    # 获取字符串中的变量
+        var_list = re.findall(r'{(.*?)}', ori_str)
+        # 将变量替换为字典中的值
+        for var in var_list:
+            ori_str = ori_str.replace('{'+var+'}', ' '+str(data[var])+' ')
+        return ori_str
+    
+    def myfirst(self,canvas,docs):
+        """
+        绘制背景页面
+        """
+        canvas.saveState()
+        pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
+        pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
+
+        
+        # 绘制背景图片
+        # background_image_path = os.path.join(settings.MEDIA_ROOT,'offer','ts.jpg')
+        background_image_path = self.offer.background_pic.path
+
+        canvas.drawImage(background_image_path, 0, 0, width=canvas._pagesize[0], height=canvas._pagesize[1])
+
+        # 绘制图标
+        # pdf_canvas.drawImage(icon_image_path, 200, 600, width=200, height=200)
+
+        # 绘制矢量图(印章)
+        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','zhang.svg')
+        drawing = svg2rlg(icon_image_path)
+        drawing = self.scale(drawing, 1)
+
+        renderPDF.draw(drawing, canvas, 380, 30)
+
+        # 标题
+        canvas.setFont('KAITI', 40)
+        canvas.setFillColorRGB(255, 0, 0)
+        # canvas.setFillColorRGB(255, 0, 0)
+        canvas.drawString(200, 550, f'录取通知书')
+
+        # 落款
+        canvas.setFont('SIMSUN', 20)
+        canvas.setFillColorRGB(0, 0, 0)
+        canvas.drawString(400, 100, f'四川省泸定中学')
+        canvas.drawString(200, 50, f'校长：                     2023 年 7 月 1 日')
+        
+        canvas.restoreState()
+
+    def get(self,request):
+
+        # 获取通知书信息
+        offer_id = request.query_params.get('offer_id', None)
+        try:
+            self.offer = OfferModel.objects.get(id=offer_id)
+        except:
+            return Response({'error':'通知书不存在'},status=status.HTTP_404_NOT_FOUND)
+
+        # 模拟学生信息
+        student = {
+            "id": "513322200003140011",
+            "name": "张三",
+            "student_id": "18041817",
+            "class_num": 1,
+            "sex": 1,
+            "admission_date": 2023
+        }
+    
+        # 注册字体
+        pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
+        pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
+        
+        # 通知书需要的学生信息
+        student_data = {
+            '姓名': student['name'],
+            '班级': student['class_num'],
+            "入学时间": student['admission_date'],
+            "性别":student['sex'],
+            "考号":student['student_id'],
+            "身份证号":student['id'],
+        }
+
+        # ori_str = f'恭喜你被我校录取，成为我校{student_data["admission_date"]}级的一员，你的录取班级为{student_data["class_num"]}班。请持此通知书于{student_data["admission_date"]}年 9 月 1 日前来我校报到。'
+        # 替换通知书中的变量
+        ori_str = self.offer.text
+        ori_str = self.replace_str(ori_str, student_data)
+
+        # 创建PDF文档对象（用buffer来存储）
+        buffer = io.BytesIO()
+        doc = SimpleDocTemplate(buffer, pagesize=A4)
+        
+        story = []
+
+        # 通知书内容
+
+        # 通知书内容样式
+        styles = getSampleStyleSheet()
+        st = styles["Normal"]
+        st.fontName = 'SIMSUN'
+        st.fontSize = 18
+        st.leading = 40
+        st.textColor = 'black'
+        st.firstLineIndent = 40
+        st.leftIndent = -20
+        st.rightIndent = -20
+        st.wordWrap = 'CJK'     # 设置自动换行
+        st.alignment = 0        # 左对齐
+
+        # img = Image(os.path.join(settings.MEDIA_ROOT,'offer','sl4.png'), width=300, height=200)
+        # story.append(img)
+        # story.append(Spacer(1, 200))
+
+        # 学生姓名样式
+        nt = copy.deepcopy(st)
+        nt.firstLineIndent = 0
+
+        # 加入空行
+        story.append(Spacer(1, 300))
+
+        name_para = Paragraph(f'{student["name"]}同学：',nt)
+        paragraph = Paragraph(ori_str, st)
+        story.append(name_para)
+        story.append(paragraph)
+
+        # 绘制印章
+        # story.append(Spacer(1, 10))
+        # img = Image(os.path.join(settings.MEDIA_ROOT,'offer','sl4.png'), width=200, height=200,hAlign='RIGHT')
+        # story.append(img)
+
+        # 生成pdf 
+        doc.build(story,onFirstPage=self.myfirst)
+
+
+        # 将pdf文件写入到临时文件中,并转换为图片
+        with tempfile.NamedTemporaryFile(suffix='.pdf', delete=False) as tmp_file:
+            tmp_filename = tmp_file.name
+            tmp_file.write(buffer.getvalue())
+
+        buffer.close()
+        # output_dir = os.path.join(settings.MEDIA_ROOT,'temp')  # 图像输出目录
+        # output_prefix = 'test'  # 图像文件名前缀
+
+        images = pdf2image.convert_from_path(tmp_filename)
+        os.remove(tmp_filename)
+
+        buffer = io.BytesIO()
+        for i, image in enumerate(images):
+            image.save(buffer, 'JPEG')
+
+        response = HttpResponse(buffer.getvalue(), content_type='image/jpeg')
+        
+        return response

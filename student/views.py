@@ -42,6 +42,10 @@ class StudentMultiCreateView(APIView):
         except:
             return Response({'msg':'文件格式错误,请传入xlsx文件'},status=status.HTTP_400_BAD_REQUEST)
 
+        # 检查上传的数据的列名是否正确，以此判断是否为学生信息表
+        if list(df.columns) != ['身份证号','姓名','性别','考号','入学时间','班级']:
+            return Response({'msg':'文件格式错误,请传入正确的学生信息表'},status=status.HTTP_400_BAD_REQUEST)
+        
         # 检查上传的数据中是否存在身份证号重复
         duplicates = list(df[df.duplicated(['身份证号'], keep=False)]['身份证号'].unique())
         if duplicates:

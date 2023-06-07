@@ -21,6 +21,7 @@ from reportlab.graphics import renderPDF
 from .models import OfferModel
 from student.models import StudentModel
 from .serializer import OfferSerializer
+from .pagination import OfferPagination
 
 
 import io
@@ -218,6 +219,7 @@ class OfferViewset(viewsets.ModelViewSet):
     queryset = OfferModel.objects.all().order_by('-id')
     serializer_class = OfferSerializer
     permission_classes = [IsAuthenticated]
+    pagination_class = OfferPagination
 
     def perform_create(self, serializer):
         # 添加录取通知书时，将之前的录取通知书全部设置为不启用

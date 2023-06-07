@@ -14,6 +14,7 @@ from rest_framework import mixins
 from .models import StudentModel
 from .serializers import StudentModelSerializer,StudentMultiCreateSerializer,StudentInfoSerializer
 from .filters import StudentFilter
+from .pagination import StudentPagination
 
 import pandas as pd
 import datetime
@@ -30,6 +31,7 @@ class StudentViewset(viewsets.ModelViewSet):
     serializer_class = StudentModelSerializer
     permission_classes = [IsAuthenticated]
     filterset_class = StudentFilter
+    pagination_class = StudentPagination
 
 # 批量添加学生视图
 class StudentMultiCreateView(APIView):

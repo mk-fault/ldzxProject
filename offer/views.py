@@ -74,7 +74,10 @@ class OfferDownloadView(APIView):
         var_list = re.findall(r'{(.*?)}', ori_str)
         # 将变量替换为字典中的值
         for var in var_list:
-            ori_str = ori_str.replace('{'+var+'}', ' '+str(data[var])+' ')
+            try:
+                ori_str = ori_str.replace('{'+var+'}', ' '+str(data[var])+' ')
+            except:
+                return None
         return ori_str
     
     def myfirst(self,canvas,docs):
@@ -158,6 +161,8 @@ class OfferDownloadView(APIView):
             # 替换通知书中的变量
             ori_str = self.offer.text
             ori_str = self.replace_str(ori_str, student_data)
+            if ori_str is None:
+                return Response({'msg':'通知书设置错误，请联系管理员'},status=status.HTTP_400_BAD_REQUEST)
 
             # 创建PDF文档对象（用buffer来存储）
             buffer = io.BytesIO()
@@ -271,7 +276,10 @@ class OfferPreviewView(APIView):
         var_list = re.findall(r'{(.*?)}', ori_str)
         # 将变量替换为字典中的值
         for var in var_list:
-            ori_str = ori_str.replace('{'+var+'}', ' '+str(data[var])+' ')
+            try:
+                ori_str = ori_str.replace('{'+var+'}', ' '+str(data[var])+' ')
+            except:
+                return None
         return ori_str
     
     def myfirst(self,canvas,docs):
@@ -320,7 +328,7 @@ class OfferPreviewView(APIView):
         try:
             self.offer = OfferModel.objects.get(id=offer_id)
         except:
-            return Response({'error':'通知书不存在'},status=status.HTTP_404_NOT_FOUND)
+            return Response({'msg':'通知书不存在'},status=status.HTTP_404_NOT_FOUND)
 
         # 模拟学生信息
         student = {
@@ -350,6 +358,8 @@ class OfferPreviewView(APIView):
         # 替换通知书中的变量
         ori_str = self.offer.text
         ori_str = self.replace_str(ori_str, student_data)
+        if ori_str is None:
+            return Response({'msg':'通知书内容错误,请按照要求进行设置'},status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
         # 创建PDF文档对象（用buffer来存储）
         buffer = io.BytesIO()

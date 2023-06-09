@@ -6,6 +6,7 @@ from utils import funcs
 class StudentModelSerializer(serializers.ModelSerializer):
     id = serializers.CharField(max_length=18)
     student_id = serializers.CharField(max_length=20)
+    sex = serializers.CharField(max_length=5)
     class Meta:
         model = StudentModel
         fields = '__all__'
@@ -59,6 +60,14 @@ class StudentModelSerializer(serializers.ModelSerializer):
         if value < 1 or value > 99:
             raise serializers.ValidationError("请输入正确的班级(1~99)")
         return value
+    
+    def validate_sex(self,value):
+        if value not in ['男','女']:
+            raise serializers.ValidationError("请输入正确的性别(男/女)")
+        if value == '男':
+            return '1'
+        else:
+            return '0'
     
 class StudentMultiCreateSerializer(serializers.ModelSerializer):
     id = serializers.CharField(max_length=18)

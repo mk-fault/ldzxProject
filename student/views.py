@@ -86,43 +86,18 @@ class StudentMultiDeleteView(APIView):
 
     def post(self,request):
         data = request.data
-        d_type = data.get('delete_type')
         d_list = data.get('delete_list')
-        if not d_type:
-            return Response({'msg':'请传入删除的类型(id or student_id)'},status=status.HTTP_400_BAD_REQUEST)
         
         if not d_list:
             return Response({'msg':'请传入删除的列表'},status=status.HTTP_400_BAD_REQUEST)
 
         # 按照身份证号删除
-        if d_type == 'id':
-            for id in d_list:
-                try:
-                    StudentModel.objects.get(id=id).delete()
-                except:
-                    return Response({'msg':f'身份证为[{id}]的学生不存在，请刷新后重试'},status=status.HTTP_404_NOT_FOUND)
-            return Response({'msg':'删除成功'},status=status.HTTP_204_NO_CONTENT)
-        
-        # 按照学号删除
-        elif d_type == 'student_id':
-            for student_id in d_list:
-                try:
-                    StudentModel.objects.get(student_id=student_id).delete()
-                except:
-                    return Response({'msg':f'考号为[{student_id}]的学生不存在，请刷新后重试'},status=status.HTTP_404_NOT_FOUND)
-            return Response({'msg':'删除成功'},status=status.HTTP_204_NO_CONTENT)
-        
-        # 按照入学时间删除
-        elif d_type == 'admission_date':
-            for admission_date in d_list:
-                try:
-                    StudentModel.objects.filter(admission_date=admission_date).delete()
-                except:
-                    return Response({'msg':'删除失败，请稍后重试'},status=status.HTTP_404_NOT_FOUND)
-            return Response({'msg':'删除成功'},status=status.HTTP_204_NO_CONTENT)
-        
-        else:
-            return Response({'msg':'删除类型错误'},status=status.HTTP_400_BAD_REQUEST)
+        for id in d_list:
+            try:
+                StudentModel.objects.get(id=id).delete()
+            except:
+                return Response({'msg':f'身份证为[{id}]的学生不存在，请刷新后重试'},status=status.HTTP_404_NOT_FOUND)
+        return Response({'msg':'删除成功'},status=status.HTTP_204_NO_CONTENT)
 
 # 单个学生查询视图
 class StudentInfoView(generics.GenericAPIView):

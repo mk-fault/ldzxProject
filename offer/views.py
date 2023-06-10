@@ -217,6 +217,8 @@ class OfferDownloadView(APIView):
             # 增加下载次数
             student.access_count += 1
             student.save()
+            
+            buffer.close()
 
             return response
         
@@ -424,5 +426,6 @@ class OfferPreviewView(APIView):
             image.save(buffer, 'JPEG')
 
         response = HttpResponse(buffer.getvalue(), content_type='image/jpeg')
+        buffer.close()
         
         return response

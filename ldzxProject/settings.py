@@ -172,7 +172,7 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.AnonRateThrottle',  # 匿名用户访问频率限制
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/minute',  # 匿名用户每分钟访问10次
+        'anon': '5/minute',  # 匿名用户每分钟访问10次
     },
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema', # 自动文档
     'DEFAULT_FILTER_BACKENDS': [

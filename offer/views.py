@@ -31,6 +31,8 @@ import copy
 import re
 import pdf2image
 import tempfile
+import psutil
+
 
 # Create your views here.
 # 录取通知书下载视图
@@ -164,7 +166,18 @@ class OfferDownloadView(APIView):
             if ori_str is None:
                 return Response({'msg':'通知书设置错误，请联系管理员'},status=status.HTTP_400_BAD_REQUEST)
 
+            # 获取系统内存使用情况
+            mem = psutil.virtual_memory()
+
+            # 剩余内存量（单位：Mb）
+            free = mem.free / 1024 / 1024
+
+            # 打印内存使用情况
+            if free < 100:
+                return Response({'msg':'当前访问量过大，请稍后重试'},status=status.HTTP_400_BAD_REQUEST)
+
             # 创建PDF文档对象（用buffer来存储）
+
             buffer = io.BytesIO()
             doc = SimpleDocTemplate(buffer, pagesize=A4)
             
@@ -217,7 +230,7 @@ class OfferDownloadView(APIView):
             # 增加下载次数
             student.access_count += 1
             student.save()
-            
+
             buffer.close()
 
             return response
@@ -364,6 +377,7 @@ class OfferPreviewView(APIView):
             return Response({'msg':'通知书内容错误,请按照要求进行设置'},status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
         # 创建PDF文档对象（用buffer来存储）
+         
         buffer = io.BytesIO()
         doc = SimpleDocTemplate(buffer, pagesize=A4)
         

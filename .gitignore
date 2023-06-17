@@ -166,3 +166,4 @@ ldzxProject/__pycache__/
 offer/__pycache__/
 student/__pycache__/
 teacher/__pycache__/
+ldzxProject/uwsgi.pid

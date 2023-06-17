@@ -140,7 +140,7 @@ class OfferDownloadView(APIView):
             try:
                 student = StudentModel.objects.get(**data)
             except:
-                return Response({'msg':'未查询到该考生信息'},status=status.HTTP_404_NOT_FOUND)
+                return Response({'msg':'未查到录取信息！请检查姓名、身份证号、准考证号是否输入正确！'},status=status.HTTP_404_NOT_FOUND)
             
             # 获取启用的录取通知书
             offer = self.get_offer()
@@ -223,7 +223,7 @@ class OfferDownloadView(APIView):
             doc.build(story,onFirstPage=self.myfirst)
         
             response = HttpResponse(content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="hello.pdf"'
+            response['Content-Disposition'] = 'attachment; filename="offer.pdf"'
 
             response.write(buffer.getvalue())
 

@@ -12,6 +12,7 @@ class StudentModel(models.Model):
     create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间',help_text='创建时间')
     update_time = models.DateTimeField(auto_now=True,verbose_name='更新时间',help_text='更新时间')
     access_count = models.SmallIntegerField(default=0,verbose_name='访问次数',help_text='访问次数')
+    offer = models.FileField(upload_to='offer/student_offer',verbose_name='录取通知书',help_text='录取通知书',null=True,blank=True)
 
     class Meta:
         db_table = 'student'

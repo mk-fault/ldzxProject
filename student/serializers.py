@@ -9,7 +9,7 @@ class StudentModelSerializer(serializers.ModelSerializer):
     sex = serializers.CharField(max_length=5)
     class Meta:
         model = StudentModel
-        fields = '__all__'
+        exclude = ['offer']
     
     def validate_id(self,value):
         # 如果是在PUT和PATCH下，则不需要验证身份证号是否存在，但不允许修改身份证号
@@ -110,7 +110,7 @@ class StudentInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentModel
         exclude = ['create_time','update_time','access_count']
-        read_only_fields = ['sex','name','admission_date','class_num']
+        read_only_fields = ['sex','name','admission_date','class_num','offer']
         
     
     

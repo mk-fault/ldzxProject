@@ -22,6 +22,7 @@ from .models import OfferModel
 from student.models import StudentModel
 from .serializer import OfferSerializer
 from .pagination import OfferPagination
+from student.serializers import StudentInfoSerializer
 
 
 import io
@@ -132,16 +133,20 @@ class OfferDownloadView(APIView):
         if not id or not student_id or not name:
             return Response({'msg':'请传入完整参数'},status=status.HTTP_400_BAD_REQUEST)
         
-        else:
-            # 注册字体
-            pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
-            pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
-            
+        else:  
             try:
                 student = StudentModel.objects.get(**data)
             except:
                 return Response({'msg':'未查到录取信息！请检查姓名、身份证号、准考证号是否输入正确！'},status=status.HTTP_404_NOT_FOUND)
+
+            if student.offer:
+                serializer = StudentInfoSerializer(student)
+                return Response(serializer.data,status=status.HTTP_200_OK)
             
+            # 注册字体
+            pdfmetrics.registerFont(TTFont('SIMSUN', 'wqy-zenhei.ttc'))
+            pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
+
             # 获取启用的录取通知书
             offer = self.get_offer()
             if offer is None:
@@ -176,10 +181,13 @@ class OfferDownloadView(APIView):
             if free < 100:
                 return Response({'msg':'当前访问量过大，请稍后重试'},status=status.HTTP_400_BAD_REQUEST)
 
-            # 创建PDF文档对象（用buffer来存储）
+            # 创建PDF文档对象
 
-            buffer = io.BytesIO()
-            doc = SimpleDocTemplate(buffer, pagesize=A4)
+            if not os.path.exists(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}')):
+                os.makedirs(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}'))
+            
+            pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.id}.pdf')
+            doc = SimpleDocTemplate(pdf_path, pagesize=A4)
             
             story = []
 
@@ -221,19 +229,23 @@ class OfferDownloadView(APIView):
 
             # 生成pdf 
             doc.build(story,onFirstPage=self.myfirst)
-        
-            response = HttpResponse(content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="offer.pdf"'
 
-            response.write(buffer.getvalue())
+            # 更新学生的录取通知书
+            student.offer = f'offer/student_offer/{student.admission_date}/{id}.pdf'
+        
+            # 返回pdf文件
+            # response = HttpResponse(content_type='application/pdf')
+            # response['Content-Disposition'] = 'attachment; filename="offer.pdf"'
+            # response.write(buffer.getvalue())
 
             # 增加下载次数
             student.access_count += 1
             student.save()
 
-            buffer.close()
+            # 序列化学生信息
+            serializer = StudentInfoSerializer(student)
 
-            return response
+            return Response(serializer.data,status=status.HTTP_200_OK)
         
 class OfferViewset(viewsets.ModelViewSet):
     queryset = OfferModel.objects.all().order_by('-id')

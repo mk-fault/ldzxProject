@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+m*p&a#0x08q(cear6b_7n0m_b04(iioylqc+@cs92&r_=+(dh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','192.168.31.183']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'teacher',
     'student',
     'offer',
+    'django_cleanup.apps.CleanupConfig', # 清理无用文件
 ]
 
 MIDDLEWARE = [

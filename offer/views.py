@@ -139,7 +139,12 @@ class OfferDownloadView(APIView):
             except:
                 return Response({'msg':'未查到录取信息！请检查姓名、身份证号、准考证号是否输入正确！'},status=status.HTTP_404_NOT_FOUND)
 
+            # 判断服务器中是否已经存在该学生的录取通知书
             if student.offer:
+                # 增加下载次数
+                student.access_count += 1
+                student.save()
+                # 返回学生信息
                 serializer = StudentInfoSerializer(student)
                 return Response(serializer.data,status=status.HTTP_200_OK)
             

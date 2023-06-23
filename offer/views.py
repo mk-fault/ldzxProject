@@ -23,6 +23,7 @@ from student.models import StudentModel
 from .serializer import OfferSerializer
 from .pagination import OfferPagination
 from student.serializers import StudentInfoSerializer
+from utils.funcs import encode_string
 
 
 import io
@@ -102,11 +103,12 @@ class OfferDownloadView(APIView):
         # pdf_canvas.drawImage(icon_image_path, 200, 600, width=200, height=200)
 
         # 绘制矢量图(印章)
-        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','zhang.svg')
+        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
+        
         drawing = svg2rlg(icon_image_path)
-        drawing = self.scale(drawing, 1)
+        drawing = self.scale(drawing, 0.45)
 
-        renderPDF.draw(drawing, canvas, 380, 30)
+        renderPDF.draw(drawing, canvas, 380, 20)
 
         # 标题
         canvas.setFont('KAITI', 40)
@@ -118,7 +120,7 @@ class OfferDownloadView(APIView):
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
         canvas.drawString(400, 100, f'四川省泸定中学')
-        canvas.drawString(200, 50, f'校长：                     2023 年 7 月 1 日')
+        canvas.drawString(395, 50, f'2023 年 7 月 1 日')
         
         canvas.restoreState()
 
@@ -191,7 +193,8 @@ class OfferDownloadView(APIView):
             if not os.path.exists(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}')):
                 os.makedirs(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}'))
             
-            pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.id}.pdf')
+            encoded_id = encode_string(student.id)
+            pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{encoded_id}.pdf')
             doc = SimpleDocTemplate(pdf_path, pagesize=A4)
             
             story = []
@@ -236,7 +239,7 @@ class OfferDownloadView(APIView):
             doc.build(story,onFirstPage=self.myfirst)
 
             # 更新学生的录取通知书
-            student.offer = f'offer/student_offer/{student.admission_date}/{id}.pdf'
+            student.offer = f'offer/student_offer/{student.admission_date}/{encoded_id}.pdf'
         
             # 返回pdf文件
             # response = HttpResponse(content_type='application/pdf')
@@ -329,15 +332,16 @@ class OfferPreviewView(APIView):
 
         canvas.drawImage(background_image_path, 0, 0, width=canvas._pagesize[0], height=canvas._pagesize[1])
 
-        # 绘制图标
-        # pdf_canvas.drawImage(icon_image_path, 200, 600, width=200, height=200)
-
-        # 绘制矢量图(印章)
-        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','zhang.svg')
+        # 绘制印章
+        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
+        
         drawing = svg2rlg(icon_image_path)
-        drawing = self.scale(drawing, 1)
+        drawing = self.scale(drawing, 0.45)
 
-        renderPDF.draw(drawing, canvas, 380, 30)
+        renderPDF.draw(drawing, canvas, 380, 20)
+
+        # icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','ldzx.png')
+        # canvas.drawImage(icon_image_path, 200, 600, width=200, height=200)
 
         # 标题
         canvas.setFont('KAITI', 40)
@@ -349,7 +353,7 @@ class OfferPreviewView(APIView):
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
         canvas.drawString(400, 100, f'四川省泸定中学')
-        canvas.drawString(200, 50, f'校长：                     2023 年 7 月 1 日')
+        canvas.drawString(395, 50, f'2023 年 7 月 1 日')
         
         canvas.restoreState()
 
@@ -432,8 +436,9 @@ class OfferPreviewView(APIView):
         story.append(paragraph)
 
         # 绘制印章
+        # page_width, page_height = A4
         # story.append(Spacer(1, 10))
-        # img = Image(os.path.join(settings.MEDIA_ROOT,'offer','sl4.png'), width=200, height=200,hAlign='RIGHT')
+        # img = Image(os.path.join(settings.MEDIA_ROOT,'offer','ldzx.png'), width=200, height=200,hAlign='RIGHT',vAlign='BOTTOM')
         # story.append(img)
 
         # 生成pdf 

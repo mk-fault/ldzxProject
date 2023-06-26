@@ -1,15 +1,16 @@
 from rest_framework import serializers
 
-from .models import StudentModel
+from .models import StudentModel, TypeModel
 from utils import funcs
 
 class StudentModelSerializer(serializers.ModelSerializer):
     id = serializers.CharField(max_length=18)
     student_id = serializers.CharField(max_length=20)
     sex = serializers.CharField(max_length=5)
+    type = serializers.SlugRelatedField(queryset=TypeModel.objects.all(),slug_field='name',required=True)
     class Meta:
         model = StudentModel
-        exclude = ['offer']
+        exclude = ['offer','qrcode']
     
     def validate_id(self,value):
         # 如果是在PUT和PATCH下，则不需要验证身份证号是否存在，但不允许修改身份证号

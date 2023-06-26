@@ -18,10 +18,6 @@ from .pagination import StudentPagination
 
 import pandas as pd
 import datetime
-import os
-from reportlab.pdfbase.ttfonts import TTFont # 字体类
-from reportlab.pdfbase import pdfmetrics   # 注册字体
-from reportlab.pdfgen import canvas # 画布类
 
 # Create your views here.
 

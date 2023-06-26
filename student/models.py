@@ -14,8 +14,21 @@ class StudentModel(models.Model):
     access_count = models.SmallIntegerField(default=0,verbose_name='访问次数',help_text='访问次数')
     offer = models.FileField(upload_to='offer/student_offer',verbose_name='录取通知书',help_text='录取通知书',null=True,blank=True)
     qrcode = models.FileField(upload_to='offer/student_offer',verbose_name='录取通知书二维码',help_text='录取通知书二维码',null=True,blank=True)
+    type = models.ForeignKey('TypeModel',on_delete=models.SET_NULL,verbose_name='学生类型',help_text='学生类型',null=True,blank=True)
 
     class Meta:
         db_table = 'student'
         verbose_name = '学生'
         verbose_name_plural = verbose_name
+
+# 学生类型
+class TypeModel(models.Model):
+    name = models.CharField(max_length=50,verbose_name='学生类型',help_text='学生类型')
+
+    class Meta:
+        db_table = 'type'
+        verbose_name = '学生类型'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.name

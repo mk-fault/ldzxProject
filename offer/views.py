@@ -23,7 +23,7 @@ from student.models import StudentModel
 from .serializer import OfferSerializer
 from .pagination import OfferPagination
 from student.serializers import StudentInfoSerializer
-from utils.funcs import encode_string
+from utils.funcs import encode_string,generate_qrcode
 
 
 import io
@@ -44,6 +44,7 @@ class OfferDownloadView(APIView):
     def __init__(self, **kwargs: Any) -> None:
         super().__init__(**kwargs)
         self.offer = None
+        self.qrcode = None
 
     @classmethod
     def get_offer(cls):
@@ -101,6 +102,12 @@ class OfferDownloadView(APIView):
 
         # 绘制图标
         # pdf_canvas.drawImage(icon_image_path, 200, 600, width=200, height=200)
+
+        # 绘制二维码
+        qrcode_path = self.qrcode
+        canvas.drawImage(qrcode_path, 50, 50, width=80, height=80)
+        canvas.setFont('SIMSUN', 10)
+        canvas.drawString(35,25,'扫码验证录取通知书')
 
         # 绘制矢量图(印章)
         icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
@@ -193,8 +200,23 @@ class OfferDownloadView(APIView):
             if not os.path.exists(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}')):
                 os.makedirs(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}'))
             
+            # 编码后的身份证号作为pdf和二维码的文件名
             encoded_id = encode_string(student.id)
+
+            #  避免文件名重复
+            while StudentModel.objects.filter(offer=f'offer/student_offer/{student.admission_date}/{encoded_id}.pdf').exists():
+                encoded_id = encode_string(student.id + 'm')
+
+            # 通知书路径
             pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{encoded_id}.pdf')
+            qr_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{encoded_id}.jpg')
+
+            # 生成二维码
+            offer_web_path = 'http://127.0.0.1:8000/media/offer/student_offer/' + f'{student.admission_date}/' + f'{encoded_id}.pdf'
+            generate_qrcode(offer_web_path,qr_path)
+            self.qrcode = qr_path
+            
+
             doc = SimpleDocTemplate(pdf_path, pagesize=A4)
             
             story = []
@@ -240,6 +262,8 @@ class OfferDownloadView(APIView):
 
             # 更新学生的录取通知书
             student.offer = f'offer/student_offer/{student.admission_date}/{encoded_id}.pdf'
+            # 更新学生的录取通知书二维码
+            student.qrcode = f'offer/student_offer/{student.admission_date}/{encoded_id}.jpg'
         
             # 返回pdf文件
             # response = HttpResponse(content_type='application/pdf')

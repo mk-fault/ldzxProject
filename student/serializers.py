@@ -109,7 +109,7 @@ class StudentMultiCreateSerializer(serializers.ModelSerializer):
 class StudentInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentModel
-        exclude = ['create_time','update_time','access_count']
+        exclude = ['create_time','update_time','access_count','qrcode']
         read_only_fields = ['sex','name','admission_date','class_num','offer']
         
     

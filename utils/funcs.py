@@ -1,5 +1,6 @@
 import re
 import hashlib
+import qrcode
 
 def validate_id_number(id_number):
     """
@@ -33,6 +34,13 @@ def encode_string(string):
     hash_value = hashlib.sha256(string.encode()).hexdigest()  # 使用SHA-256哈希函数生成哈希值
     encoded_value = hash_value[:8]  # 取哈希值的前8位字符作为编码结果
     return encoded_value
+
+def generate_qrcode(offer_path,qrcode_path):
+    """
+    生成通知书二维码
+    """
+    img=qrcode.make(offer_path)
+    img.save(qrcode_path)
 
 
 

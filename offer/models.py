@@ -8,8 +8,9 @@ class OfferModel(models.Model):
     background_pic = models.ImageField(upload_to='offer/background_pic',verbose_name='背景图')
     text = models.TextField(verbose_name='通知书文本内容')
     is_using = models.BooleanField(verbose_name='是否启用')
-    school = models.CharField(max_length=30,verbose_name='学校名称',default='学校名称')
-    time = models.CharField(max_length=20,verbose_name='时间',default='时间')
+    school = models.CharField(max_length=30,verbose_name='学校名称')
+    time = models.CharField(max_length=20,verbose_name='时间')
+    web_path = models.CharField(max_length=50,verbose_name='服务器前缀')
     type = models.ForeignKey(TypeModel,on_delete=models.SET_NULL,verbose_name='学生类型',help_text='学生类型',null=True,blank=True)
 
     class Meta:

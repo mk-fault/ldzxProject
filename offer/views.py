@@ -38,6 +38,36 @@ import psutil
 
 
 # Create your views here.
+
+class OfferViewset(viewsets.ModelViewSet):
+    queryset = OfferModel.objects.all().order_by('-id')
+    serializer_class = OfferSerializer
+    permission_classes = [IsAuthenticated]
+    pagination_class = OfferPagination
+    filterset_class = OfferFilter
+
+    def perform_create(self, serializer):
+        # 添加录取通知书时，将同类型的录取通知书全部设置为不启用
+        qs = self.queryset.filter(type=serializer.validated_data['type'],is_using=True)
+        if qs.exists():
+            for q in qs:
+                q.is_using = False
+                q.save()
+        # 将新添加的录取通知书设置为启用(booleanfield默认为False)
+        serializer.validated_data['is_using'] = True
+        return super().perform_create(serializer)
+    
+    def perform_update(self, serializer):
+        # 修改录取通知书时，将同类型的录取通知书全部设置为不启用
+        if serializer.validated_data.get('is_using',False):
+            qs = self.queryset.filter(type=self.get_object().type,is_using=True)
+            if qs.exists():
+                for q in qs:
+                    q.is_using = False
+                    q.save()
+        return super().perform_update(serializer)
+
+
 # 录取通知书下载视图
 class OfferDownloadView(APIView):
     permission_classes = [AllowAny]
@@ -48,12 +78,12 @@ class OfferDownloadView(APIView):
         self.qrcode = None
 
     @classmethod
-    def get_offer(cls):
+    def get_offer(cls,type):
         """
         获取启用的录取通知书
         """
         try:
-            offer = OfferModel.objects.get(is_using=True)
+            offer = OfferModel.objects.get(type=type,is_using=True)
         except:
             return None
         else:
@@ -108,7 +138,7 @@ class OfferDownloadView(APIView):
         qrcode_path = self.qrcode
         canvas.drawImage(qrcode_path, 50, 50, width=80, height=80)
         canvas.setFont('SIMSUN', 10)
-        canvas.drawString(35,25,'扫码验证录取通知书')
+        canvas.drawString(45,25,'扫码验证录取通知书')
 
         # 绘制矢量图(印章)
         icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
@@ -127,8 +157,10 @@ class OfferDownloadView(APIView):
         # 落款
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
-        canvas.drawString(400, 100, f'四川省泸定中学')
-        canvas.drawString(395, 50, f'2023 年 7 月 1 日')
+        # canvas.drawString(400, 100, f'四川省泸定中学')
+        # canvas.drawString(395, 50, f'2023 年 7 月 1 日')
+        canvas.drawString(400, 100, self.offer.school)
+        canvas.drawString(395, 50, self.offer.time)
         
         canvas.restoreState()
 
@@ -163,7 +195,7 @@ class OfferDownloadView(APIView):
             pdfmetrics.registerFont(TTFont('KAITI', 'ukai.ttc'))
 
             # 获取启用的录取通知书
-            offer = self.get_offer()
+            offer = self.get_offer(student.type)
             if offer is None:
                 return Response({'msg':'未查询到启用的录取通知书，请联系管理员'},status=status.HTTP_404_NOT_FOUND)
             
@@ -198,22 +230,23 @@ class OfferDownloadView(APIView):
 
             # 创建PDF文档对象
 
-            if not os.path.exists(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}')):
-                os.makedirs(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}'))
+            if not os.path.exists(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.type}')):
+                os.makedirs(os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.type}'))
             
             # 编码后的身份证号作为pdf和二维码的文件名
             encoded_id = encode_string(student.id)
 
             #  避免文件名重复
-            while StudentModel.objects.filter(offer=f'offer/student_offer/{student.admission_date}/{encoded_id}.pdf').exists():
+            while StudentModel.objects.filter(offer=f'offer/student_offer/{student.admission_date}/{student.type}/{encoded_id}.pdf').exists():
                 encoded_id = encode_string(student.id + 'm')
 
             # 通知书路径
-            pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{encoded_id}.pdf')
-            qr_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{encoded_id}.jpg')
+            pdf_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.type}',f'{encoded_id}.pdf')
+            qr_path = os.path.join(settings.MEDIA_ROOT,'offer','student_offer',f'{student.admission_date}',f'{student.type}',f'{encoded_id}.jpg')
 
             # 生成二维码
-            offer_web_path = 'http://127.0.0.1:8000/media/offer/student_offer/' + f'{student.admission_date}/' + f'{encoded_id}.pdf'
+            web_path = self.offer.web_path
+            offer_web_path = 'http://' + web_path + '/media/offer/student_offer/' + f'{student.admission_date}/' + f'{student.type}/' + f'{encoded_id}.pdf'
             generate_qrcode(offer_web_path,qr_path)
             self.qrcode = qr_path
             
@@ -262,9 +295,9 @@ class OfferDownloadView(APIView):
             doc.build(story,onFirstPage=self.myfirst)
 
             # 更新学生的录取通知书
-            student.offer = f'offer/student_offer/{student.admission_date}/{encoded_id}.pdf'
+            student.offer = f'offer/student_offer/{student.admission_date}/{student.type}/{encoded_id}.pdf'
             # 更新学生的录取通知书二维码
-            student.qrcode = f'offer/student_offer/{student.admission_date}/{encoded_id}.jpg'
+            student.qrcode = f'offer/student_offer/{student.admission_date}/{student.type}/{encoded_id}.jpg'
         
             # 返回pdf文件
             # response = HttpResponse(content_type='application/pdf')
@@ -279,35 +312,6 @@ class OfferDownloadView(APIView):
             serializer = StudentInfoSerializer(student)
 
             return Response(serializer.data,status=status.HTTP_200_OK)
-        
-class OfferViewset(viewsets.ModelViewSet):
-    queryset = OfferModel.objects.all().order_by('-id')
-    serializer_class = OfferSerializer
-    permission_classes = [IsAuthenticated]
-    pagination_class = OfferPagination
-    filterset_class = OfferFilter
-
-    def perform_create(self, serializer):
-        # 添加录取通知书时，将之前的录取通知书全部设置为不启用
-        qs = self.queryset.filter(is_using=True)
-        if qs.exists():
-            for q in qs:
-                q.is_using = False
-                q.save()
-
-        # 将新添加的录取通知书设置为启用(booleanfield默认为False)
-        serializer.validated_data['is_using'] = True
-        return super().perform_create(serializer)
-    
-    def perform_update(self, serializer):
-        # 修改录取通知书时，将之前的录取通知书全部设置为不启用
-        if serializer.validated_data.get('is_using',False):
-            qs = self.queryset.filter(is_using=True)
-            if qs.exists():
-                for q in qs:
-                    q.is_using = False
-                    q.save()
-        return super().perform_update(serializer)
     
 class OfferPreviewView(APIView):
     permission_classes = [IsAuthenticated]
@@ -358,6 +362,12 @@ class OfferPreviewView(APIView):
 
         canvas.drawImage(background_image_path, 0, 0, width=canvas._pagesize[0], height=canvas._pagesize[1])
 
+        # 绘制二维码
+        qrcode_path = os.path.join(settings.MEDIA_ROOT,'offer','static','qrcode.jpg')
+        canvas.drawImage(qrcode_path, 50, 50, width=80, height=80)
+        canvas.setFont('SIMSUN', 10)
+        canvas.drawString(45,25,'扫码验证录取通知书')
+
         # 绘制印章
         icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
         
@@ -378,8 +388,10 @@ class OfferPreviewView(APIView):
         # 落款
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
-        canvas.drawString(400, 100, f'四川省泸定中学')
-        canvas.drawString(395, 50, f'2023 年 7 月 1 日')
+        # canvas.drawString(400, 100, f'四川省泸定中学')
+        # canvas.drawString(395, 50, f'2023 年 7 月 1 日')
+        canvas.drawString(400, 100, self.offer.school)
+        canvas.drawString(395, 50, self.offer.time)
         
         canvas.restoreState()
 

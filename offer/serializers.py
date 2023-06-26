@@ -6,6 +6,12 @@ class OfferSerializer(serializers.ModelSerializer):
     type = serializers.SlugRelatedField(queryset=TypeModel.objects.all(),slug_field='name',required=True)
     school = serializers.CharField(max_length=30,required=True)
     time = serializers.CharField(max_length=20,required=True)
+
     class Meta:
         model = OfferModel
         fields = '__all__'
+
+    def validate_time(self,value):
+        lst = value.split('-')
+        time = lst[0] + ' 年 ' + str(int(lst[1])) + ' 月 ' + str(int(lst[2])) + ' 日'
+        return time

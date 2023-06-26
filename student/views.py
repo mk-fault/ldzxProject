@@ -11,8 +11,8 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAdminUser,AllowAny,IsAuthenticated
 from rest_framework import mixins
 
-from .models import StudentModel
-from .serializers import StudentModelSerializer,StudentMultiCreateSerializer,StudentInfoSerializer
+from .models import StudentModel, TypeModel
+from .serializers import StudentModelSerializer,StudentMultiCreateSerializer,StudentInfoSerializer,TypeModelSerializer
 from .filters import StudentFilter
 from .pagination import StudentPagination
 
@@ -115,6 +115,11 @@ class StudentInfoView(generics.GenericAPIView):
             ser = self.get_serializer(student)
             return Response(ser.data,status=status.HTTP_200_OK)
 
-            
+
+# 类型视图
+class TypeViewset(viewsets.ModelViewSet):
+    queryset = TypeModel.objects.all().order_by('id')
+    serializer_class = TypeModelSerializer
+    permission_classes = [IsAuthenticated]
         
     

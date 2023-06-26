@@ -112,6 +112,11 @@ class StudentInfoSerializer(serializers.ModelSerializer):
         model = StudentModel
         exclude = ['create_time','update_time','access_count','qrcode']
         read_only_fields = ['sex','name','admission_date','class_num','offer']
+
+class TypeModelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TypeModel
+        fields = '__all__'
         
     
     

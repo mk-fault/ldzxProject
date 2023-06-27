@@ -41,7 +41,7 @@ class StudentMultiCreateView(APIView):
             return Response({'msg':'文件格式错误,请传入xlsx文件'},status=status.HTTP_400_BAD_REQUEST)
 
         # 检查上传的数据的列名是否正确，以此判断是否为学生信息表
-        if list(df.columns) != ['身份证号','姓名','性别','考号','入学时间','班级']:
+        if set(df.columns) != set(['身份证号','姓名','性别','考号','入学时间','班级','类型']):
             return Response({'msg':'文件格式错误,请传入正确的学生信息表'},status=status.HTTP_400_BAD_REQUEST)
         
         # 检查上传的数据中是否存在身份证号重复
@@ -65,6 +65,7 @@ class StudentMultiCreateView(APIView):
             data['student_id'] = data.pop('考号')
             data['admission_date'] = data.pop('入学时间')
             data['class_num'] = data.pop('班级')
+            data['type'] = data.pop('类型')
             # StudentModel.objects.update_or_create(id=data['身份证号'],name=data['姓名'],sex=data['性别'],student_id=data['学号'],admission_date=data['入学时间'])
         
         # 反序列化

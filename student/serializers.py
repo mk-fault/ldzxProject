@@ -73,6 +73,7 @@ class StudentModelSerializer(serializers.ModelSerializer):
 class StudentMultiCreateSerializer(serializers.ModelSerializer):
     id = serializers.CharField(max_length=18)
     student_id = serializers.CharField(max_length=20)
+    type = serializers.SlugRelatedField(queryset=TypeModel.objects.all(),slug_field='name',required=True)
     class Meta:
         model = StudentModel
         fields = '__all__'

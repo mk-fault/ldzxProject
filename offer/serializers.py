@@ -12,6 +12,9 @@ class OfferSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def validate_time(self,value):
-        lst = value.split('-')
-        time = lst[0] + ' 年 ' + str(int(lst[1])) + ' 月 ' + str(int(lst[2])) + ' 日'
+        if '-' in value:
+            lst = value.split('-')
+            time = lst[0] + ' 年 ' + str(int(lst[1])) + ' 月 ' + str(int(lst[2])) + ' 日'
+        else:
+            return value
         return time

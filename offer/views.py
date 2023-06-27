@@ -152,7 +152,7 @@ class OfferDownloadView(APIView):
         canvas.setFont('KAITI', 40)
         canvas.setFillColorRGB(255, 0, 0)
         # canvas.setFillColorRGB(255, 0, 0)
-        canvas.drawString(200, 550, f'录取通知书')
+        canvas.drawString(200, 650, f'录取通知书')
 
         # 落款
         canvas.setFont('SIMSUN', 20)
@@ -279,7 +279,7 @@ class OfferDownloadView(APIView):
             nt.firstLineIndent = 0
 
             # 加入空行
-            story.append(Spacer(1, 300))
+            story.append(Spacer(1, 200))
 
             name_para = Paragraph(f'{name}同学：',nt)
             paragraph = Paragraph(ori_str, st)
@@ -383,7 +383,7 @@ class OfferPreviewView(APIView):
         canvas.setFont('KAITI', 40)
         canvas.setFillColorRGB(255, 0, 0)
         # canvas.setFillColorRGB(255, 0, 0)
-        canvas.drawString(200, 550, f'录取通知书')
+        canvas.drawString(200, 650, f'录取通知书')
 
         # 落款
         canvas.setFont('SIMSUN', 20)
@@ -466,7 +466,7 @@ class OfferPreviewView(APIView):
         nt.firstLineIndent = 0
 
         # 加入空行
-        story.append(Spacer(1, 300))
+        story.append(Spacer(1, 200))
 
         name_para = Paragraph(f'{student["name"]}同学：',nt)
         paragraph = Paragraph(ori_str, st)

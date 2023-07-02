@@ -57,10 +57,10 @@ class StudentModelSerializer(serializers.ModelSerializer):
             return value
         raise serializers.ValidationError(f"考号[{value}]已存在")
 
-    def validate_class_num(self,value):
-        if value < 1 or value > 99:
-            raise serializers.ValidationError("请输入正确的班级(1~99)")
-        return value
+    # def validate_class_num(self,value):
+    #     if value < 1 or value > 99:
+    #         raise serializers.ValidationError("请输入正确的班级(1~99)")
+    #     return value
     
     def validate_sex(self,value):
         if value not in ['男','女']:
@@ -102,10 +102,10 @@ class StudentMultiCreateSerializer(serializers.ModelSerializer):
             return value
         raise serializers.ValidationError(f"考号[{value}]已存在")
     
-    def validate_class_num(self,value):
-        if value < 1 or value > 99:
-            raise serializers.ValidationError("请输入正确的班级(1~99)")
-        return value
+    # def validate_class_num(self,value):
+    #     if value < 1 or value > 99:
+    #         raise serializers.ValidationError("请输入正确的班级(1~99)")
+    #     return value
     
 
 class StudentInfoSerializer(serializers.ModelSerializer):

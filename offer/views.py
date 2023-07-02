@@ -65,6 +65,13 @@ class OfferViewset(viewsets.ModelViewSet):
                 for q in qs:
                     q.is_using = False
                     q.save()
+
+        # 修改录取通知书时，将同类型学生原的通知书删除
+        qs = StudentModel.objects.filter(type=self.get_object().type)
+        if qs.exists():
+            for q in qs:
+                q.offer.delete()
+                q.qrcode.delete()
         return super().perform_update(serializer)
 
 

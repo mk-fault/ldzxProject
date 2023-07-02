@@ -1,10 +1,17 @@
 from rest_framework.permissions import BasePermission
 
 class IsAdminOrOwnerPutOnly(BasePermission):
-    def has_object_permission(self, request, view,obj):
-        # 如果是管理员可以进行操作
-        if request.user.is_superuser:
+    def has_permission(self, request, view):
+            if request.method in ['GET', 'POST', 'PATCH', 'DELETE']:
+                return request.user.is_superuser
+            elif request.method == 'PUT':
+                return True
+            else:
+                return False
+
+    def has_object_permission(self, request, view, obj):
+        if request.method == 'PUT':
+            return str(obj.username) == str(request.user)
+        else:
             return True
-        # 如果是PUT请求，且是用户本人，可以进行操作
-        return request.method == 'PUT' and obj == request.user
             

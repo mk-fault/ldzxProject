@@ -21,11 +21,7 @@ from .permissions import IsAdminOrOwnerPutOnly
 # POST：添加教师(仅管理员)
 # PATCH：重置密码(仅管理员)(默认密码123456)
 # PUT: 重置密码(需要传入username)(教师可用，仅允许修改自己的密码)
-class TeacherViewset(viewsets.GenericViewSet,
-                     mixins.ListModelMixin,
-                     mixins.UpdateModelMixin,
-                     mixins.CreateModelMixin,
-                     mixins.DestroyModelMixin):
+class TeacherViewset(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('id')
     serializer_class = TeacherSerializer
     permission_classes = [IsAdminOrOwnerPutOnly]

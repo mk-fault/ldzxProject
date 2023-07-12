@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+m*p&a#0x08q(cear6b_7n0m_b04(iioylqc+@cs92&r_=+(dh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost','192.168.31.183','192.168.31.113','192.168.31.253','192.168.58.6']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'teacher',
     'student',
     'offer',
+    'django_cleanup.apps.CleanupConfig', # 清理无用文件
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,9 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -172,7 +175,7 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.AnonRateThrottle',  # 匿名用户访问频率限制
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/minute',  # 匿名用户每分钟访问10次
+        'anon': '5/minute',  # 匿名用户每分钟访问10次
     },
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema', # 自动文档
     'DEFAULT_FILTER_BACKENDS': [
@@ -201,10 +204,10 @@ LOGGING = {
     "handlers": {
         "file": {
             "level": "INFO",
-            "class": "logging.FileHandler",
+            "class": "logging.handlers.RotatingFileHandler",
             "filename": os.path.join(BASE_DIR, "logs/log.log"),
-            # "maxBytes": 1024 * 1024 * 50,
-            # "backupCount": 3,
+            "maxBytes": 1024 * 1024 * 50,
+            "backupCount": 5,
             "formatter": "verbose",
         },
     },

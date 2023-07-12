@@ -21,11 +21,7 @@ from .permissions import IsAdminOrOwnerPutOnly
 # POST：添加教师(仅管理员)
 # PATCH：重置密码(仅管理员)(默认密码123456)
 # PUT: 重置密码(需要传入username)(教师可用，仅允许修改自己的密码)
-class TeacherViewset(viewsets.GenericViewSet,
-                     mixins.ListModelMixin,
-                     mixins.UpdateModelMixin,
-                     mixins.CreateModelMixin,
-                     mixins.DestroyModelMixin):
+class TeacherViewset(viewsets.ModelViewSet):
     queryset = User.objects.all().order_by('id')
     serializer_class = TeacherSerializer
     permission_classes = [IsAdminOrOwnerPutOnly]
@@ -38,34 +34,34 @@ class TeacherViewset(viewsets.GenericViewSet,
 class DeactiveTeacherView(APIView):
     permission_classes = [IsAdminUser]
 
-    def patch(self,request):
-        username = request.data.get('username')
-        if not username:
-            return Response({'msg':'用户名不能为空'},status=status.HTTP_400_BAD_REQUEST)
+    def post(self,request):
+        id = request.data.get('id')
+        if not id:
+            return Response({'msg':'请传入教师ID'},status=status.HTTP_400_BAD_REQUEST)
         try:
-            user = User.objects.get(username=username)
+            user = User.objects.get(id=id)
         except User.DoesNotExist:
-            return Response({'msg':'用户不存在'},status=status.HTTP_404_NOT_FOUND)
+            return Response({'msg':'教师不存在，请刷新后重试'},status=status.HTTP_404_NOT_FOUND)
         user.is_active = False
         user.save()
-        return Response({'msg':'失活成功'},status=status.HTTP_200_OK)
+        return Response({'msg':'教师失活成功'},status=status.HTTP_200_OK)
 
 # 教师激活视图
 # PATCH：激活教师(仅管理员)
 class ReactiveTeacherView(APIView):
     permission_classes = [IsAdminUser]
 
-    def patch(self,request):
-        username = request.data.get('username')
-        if not username:
-            return Response({'msg':'用户名不能为空'},status=status.HTTP_400_BAD_REQUEST)
+    def post(self,request):
+        id = request.data.get('id')
+        if not id:
+            return Response({'msg':'请传入教师ID'},status=status.HTTP_400_BAD_REQUEST)
         try:
-            user = User.objects.get(username=username)
+            user = User.objects.get(id=id)
         except User.DoesNotExist:
-            return Response({'msg':'用户不存在'},status=status.HTTP_404_NOT_FOUND)
+            return Response({'msg':'教师不存在，请刷新后重试'},status=status.HTTP_404_NOT_FOUND)
         user.is_active = True
         user.save()
-        return Response({'msg':'激活成功'},status=status.HTTP_200_OK)
+        return Response({'msg':'教师激活成功'},status=status.HTTP_200_OK)
     
 # 登录视图
 class LoginView(TokenViewBase):

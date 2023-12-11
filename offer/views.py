@@ -148,7 +148,7 @@ class OfferDownloadView(APIView):
         canvas.drawString(45,25,'扫码验证录取通知书')
 
         # 绘制矢量图(印章)
-        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
+        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','xxzx.svg')
         
         drawing = svg2rlg(icon_image_path)
         drawing = self.scale(drawing, 0.45)
@@ -164,7 +164,7 @@ class OfferDownloadView(APIView):
         # 落款
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
-        # canvas.drawString(400, 100, f'四川省泸定中学')
+        # canvas.drawString(400, 100, f'XXXX中学')
         # canvas.drawString(395, 50, f'2023 年 7 月 1 日')
         canvas.drawString(400, 100, self.offer.school)
         canvas.drawString(395, 50, self.offer.time)
@@ -376,7 +376,7 @@ class OfferPreviewView(APIView):
         canvas.drawString(45,25,'扫码验证录取通知书')
 
         # 绘制印章
-        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','ldzx.svg')
+        icon_image_path = os.path.join(settings.MEDIA_ROOT,'offer','static','xxzx.svg')
         
         drawing = svg2rlg(icon_image_path)
         drawing = self.scale(drawing, 0.45)
@@ -395,7 +395,7 @@ class OfferPreviewView(APIView):
         # 落款
         canvas.setFont('SIMSUN', 20)
         canvas.setFillColorRGB(0, 0, 0)
-        # canvas.drawString(400, 100, f'四川省泸定中学')
+        # canvas.drawString(400, 100, f'XX中学')
         # canvas.drawString(395, 50, f'2023 年 7 月 1 日')
         canvas.drawString(400, 100, self.offer.school)
         canvas.drawString(395, 50, self.offer.time)
